@@ -1,6 +1,6 @@
 # Datenschutz & kontrollierte Workflow-Freigabe
 
-> Diese Seite beschreibt sichere **Nutzungsprinzipien**. Sie ist weder ein Audit noch eine Zertifizierung des derzeit unveröffentlichten Produkts.
+> Diese Seite beschreibt sichere **Nutzungsprinzipien**. Sie ist weder ein Audit noch eine Zertifizierung des öffentlich verfügbaren Beta.3-Produkts.
 
 ## Schutzbereiche
 

@@ -18,7 +18,7 @@ Ein lokaler Präsentations- und Dokumentations-Workspace für n8n-Automationen.
 </div>
 
 > [!IMPORTANT]
-> **Der öffentliche Download ist noch nicht freigegeben.** In diesem Repository gibt es zum Stand **23. November 2026** noch keine veröffentlichte Anwendung. Die hier beschriebenen Funktionen stammen aus der privaten Entwicklung; eine vollständig abgenommene Windows-Version liegt **nicht** als GitHub-Release vor. Das Menü **Code → Download ZIP** enthält lediglich die Dokumentation dieses Repositories.
+> **Öffentliche Community-Beta verfügbar – keine Stable-Freigabe.** [v1.0.0-beta.3](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3) wurde am **23. November 2026** mit Windows-ZIP, Manifest und Signaturdatei veröffentlicht. Native Windows-/Browser-Abnahme sowie unabhängige Sicherheits- und Signaturprüfungen sind hier **nicht als bestanden dokumentiert**. Bitte zuerst mit synthetischen Workflows testen und vor Upgrades die Bibliothek sichern. **Code → Download ZIP** ist nur die Dokumentation, nicht das Programm.
 
 ## Was ist Showcase Studio?
 
@@ -60,16 +60,16 @@ Der Workflow läuft weiterhin in **n8n**. Showcase Studio ist **kein n8n-Editor 
 
 ## Produktbereiche
 
-Die Module sind im privaten Entwicklungsprojekt vorhanden, werden dort weiterentwickelt oder sind als nächste Schritte dokumentiert. **Keine Zeile dieser Übersicht bedeutet, dass diese Funktion schon in einer öffentlich herunterladbaren Version getestet wurde.**
+Die Module sind im privaten Entwicklungsprojekt vorhanden, werden dort weiterentwickelt oder sind als nächste Schritte dokumentiert. **Das öffentliche Prerelease beschreibt mehrere dieser Funktionen. Das Vorhandensein des ZIPs beweist jedoch weder deren vollständige Funktionsprüfung noch die Kompatibilität mit allen Geräten.**
 
 | Bereich | Was daraus entsteht | Entwicklungsstand |
 |:--|:--|:--|
-| n8n / JSON | Workflow-Import und geführte Verbindung | Privater Entwicklungsstand |
-| Präsentationsstudio | Canvas, Abschnitte, Node-Fokus und Sticky Notes | Privater Entwicklungsstand |
-| Workflow-Landkarte | Aufrufketten und Sub-Workflow-Beziehungen | Fortgeschrittener privater Zweig |
-| Versionen & Vergleich | Strukturelle Unterschiede nachvollziehbar erklären | Fortgeschrittener privater Zweig |
-| Exporte | HTML, SVG, PNG, Markdown, Mermaid und weitere Formate | Implementierungen im Entwicklungszweig; Release-QA ausstehend |
-| Privacy Review | Bereinigen, prüfen und bewusst freigeben | Entwicklungsstand; nicht öffentlich zertifiziert |
+| n8n / JSON | Workflow-Import und geführte Verbindung | In Beta.3 beschrieben; eigenständige E2E-Abnahme offen |
+| Präsentationsstudio | Canvas, Abschnitte, Node-Fokus und Sticky Notes | In Beta.3 beschrieben; eigenständige E2E-Abnahme offen |
+| Workflow-Landkarte | Aufrufketten und Sub-Workflow-Beziehungen | In Beta.3 beschrieben; neuere private Zweige getrennt |
+| Versionen & Vergleich | Strukturelle Unterschiede nachvollziehbar erklären | In Beta.3 beschrieben; neuere private Zweige getrennt |
+| Exporte | HTML, SVG, PNG, Markdown, Mermaid und weitere Formate | Beta.3-Release-Notes beschreiben Exporte; E2E-QA nicht belegt |
+| Privacy Review | Bereinigen, prüfen und bewusst freigeben | Beta.3 beschreibt Privacy Review; keine Zertifizierung |
 
 Mehr Details: [Feature-Status und Prüfgrenzen](docs/FEATURE_STATUS.md).
 
@@ -87,14 +87,15 @@ Mehr Details: [Feature-Status und Prüfgrenzen](docs/FEATURE_STATUS.md).
 
 Die bisherigen Screenshots gehören zu einer älteren Oberfläche und sind deshalb aus dieser Präsentation entfernt. Du findest sie weiterhin im eindeutig beschrifteten [historischen Bildarchiv](docs/VISUAL_ARCHIVE.md). Neue Produktbilder werden erst mit tatsächlichem Build-Nachweis, Testdaten und visueller Freigabe gezeigt.
 
-## Starten, sobald eine freigegebene Version existiert
+## Beta herunterladen und sicher ausprobieren
 
-1. Unter [**GitHub Releases**](https://github.com/rootkid-code/showcase-studio-releases/releases) eine tatsächliche Version mit **Dateianhang** öffnen.
-2. Die Release Notes lesen: unterstützte Plattform, Voraussetzungen, bekannte Einschränkungen und gegebenenfalls SHA-256.
-3. Das dafür vorgesehene Paket vollständig herunterladen und der **im Paket enthaltenen** Installationsanleitung folgen.
-4. Zunächst mit einem synthetischen Demo-Workflow testen; erst danach gegebenenfalls eine eigene n8n-Instanz mit minimalen Leserechten verbinden.
+1. [**v1.0.0-beta.3 mit ZIP und Release Notes öffnen**](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3).
+2. Unter **Assets** die Datei **ShowcaseStudio-1.0.0-beta.3.zip** laden – nicht die automatisch erzeugte GitHub-Source-ZIP.
+3. Die [veröffentlichte SHA-256-Prüfsumme](docs/releases/v1.0.0-beta.3.md) mit PowerShell prüfen, vollständig entpacken und laut Release Notes **01-INSTALLIEREN.vbs** starten.
+4. Zuerst einen synthetischen lokalen JSON-Workflow testen. Für den JSON-Import ist keine n8n-Verbindung notwendig.
+5. Vor jedem Export vertrauliche Inhalte, Prozessstrukturen, URLs und Notizen selbst kontrollieren.
 
-**Aktuell ist dieser Vorgang noch nicht möglich:** Es wurde kein offizielles öffentliches Installationspaket hochgeladen.
+**Die Beta ist ein öffentliches Testpaket, kein nachgewiesener Stable-Build.** [Installationsanleitung](docs/GETTING_STARTED.md) · [Release-Nachweise und Grenzen](docs/releases/v1.0.0-beta.3.md).
 
 ## Dokumentation
 
@@ -117,7 +118,7 @@ Die bisherigen Screenshots gehören zu einer älteren Oberfläche und sind desha
 - [Features und Reifegrad](docs/FEATURE_STATUS.md)
 - [Projektfokus und Prioritäten](docs/PROJECT_DIRECTION.md)
 - [Marke & Medien](docs/BRANDING.md)
-- [Release-Kriterien](docs/RELEASE_POLICY.md)
+- [Release-Kriterien](docs/RELEASE_POLICY.md) · [Beta.3-Artefakte](docs/releases/v1.0.0-beta.3.md)
 
 </td>
 </tr>
@@ -136,7 +137,7 @@ Der aktuelle Fokus ist **eine zuverlässige, verständliche Free-/Community-Beta
 <details>
 <summary><strong>Wo ist der Download?</strong></summary>
 
-Es gibt derzeit keinen öffentlichen Installationsdownload. Wenn eine Version geprüft und freigegeben wurde, erscheinen Dateien und Release Notes unter <a href="https://github.com/rootkid-code/showcase-studio-releases/releases">GitHub Releases</a>. Die automatisch generierte Source-ZIP dieses Repositories ist keine Anwendung.
+Das öffentliche **Prerelease v1.0.0-beta.3** enthält unter <a href="https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3">GitHub Releases</a> das eigentliche Windows-ZIP. Der <strong>Code → Download ZIP</strong>-Button liefert nur die Dokumentation.
 
 </details>
 

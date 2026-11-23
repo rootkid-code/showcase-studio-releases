@@ -2,7 +2,7 @@
 
 ## Status
 
-Showcase Studio ist zum Stand 23. November 2026 noch **nicht öffentlich veröffentlicht**. Es gibt daher derzeit **keine unterstützte öffentliche Produktversion**. Nach einem Release gelten die Hinweise und Support-Zeiträume der jeweiligen Release Notes.
+Seit dem **23. November 2026** ist [v1.0.0-beta.3](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3) als öffentliches **GitHub-Prerelease** verfügbar. Es ist eine **Community-Testversion, keine zertifizierte oder vollständig abgenommene Stable-Version**. Eine garantierte Supportdauer ist nicht zugesagt.
 
 ## Sicherheitsprobleme melden
 
@@ -22,3 +22,5 @@ Es wird aktuell keine Reaktionszeit oder Sicherheitszertifizierung zugesichert.
 - Nur Artefakte aus den tatsächlichen [GitHub Releases](https://github.com/rootkid-code/showcase-studio-releases/releases) verwenden; Prüfsummen und Release Notes beachten, sobald verfügbar.
 
 Weitere Hilfe: [SUPPORT.md](SUPPORT.md).
+
+**Nachweisgrenze:** Die Beta.3-Dateien sind öffentlich vorhanden. Eine unabhängige Windows-/Security-/Signaturabnahme ist in diesem Repository nicht als bestanden dokumentiert. [Konkrete Artefaktinformationen](docs/releases/v1.0.0-beta.3.md).

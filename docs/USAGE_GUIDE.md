@@ -1,6 +1,6 @@
 # Showcase Studio · Anwenderhandbuch
 
-> **Entwicklungsstand, keine öffentliche Funktionsgarantie.** Diese Anleitung fasst die dokumentierte Produktarchitektur und die vorhandenen Entwicklungszweige zusammen. Bezeichnungen und Funktionen können sich bis zum ersten offiziellen Release ändern.
+> **Öffentliche Beta.3 vorhanden, keine Funktionsgarantie.** Diese Anleitung erklärt Konzepte sowie Funktionen aus den [Beta.3-Release Notes](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3) und privaten Entwicklungszweigen. Nicht jeder beschriebene Ablauf ist unabhängig im ausgelieferten Paket geprüft.
 
 ## 1 · Workflows einlesen
 

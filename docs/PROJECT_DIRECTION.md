@@ -22,7 +22,7 @@
 
 ## Nächster nachweisbarer Meilenstein
 
-**Free/Community-Beta mit dokumentiertem Abnahmeprotokoll und echtem GitHub-Release-Artefakt.** Bis dahin bleibt der Veröffentlichungsstatus *kein öffentlicher Anwendungsdownload*.
+**Free/Community-Beta mit dokumentiertem Abnahmeprotokoll und echtem GitHub-Release-Artefakt.** Am 23.11.2026 wurde [**v1.0.0-beta.3**](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3) als öffentliches **Prerelease mit Anwendungs-ZIP** veröffentlicht. Eine **Stable-Freigabe und vollständige dokumentierte Windows-/Security-Abnahme** liegen damit noch nicht vor.
 
 Eine Änderung dieser Entscheidung erfordert eine neue, ausdrücklich dokumentierte Produktfreigabe. **Keine automatische Vermarktung aus historischen Notizen ableiten.**
 
