@@ -1,37 +1,39 @@
 # Showcase Studio · Brand Guide
 
-**Gültige Referenz:** Das goldene, stilisierte **S als Workflow-Verbindung** aus dem neueren privaten Entwicklungszweig. Diese öffentlich bereitgestellten Dateien wurden **byteidentisch** aus dem Original übernommen.
+**Aktuelle Referenz:** Goldenes, stilisiertes **S als Workflow-Verbindung**. Das ältere mehrfarbige Infinity-Signet gehört zur Historie und ist **nicht** das heutige Hauptlogo.
 
-<p align="center"><img src="../assets/brand/showcase-icon.png" width="142" alt="Originales Showcase Studio S-Icon in Gold" /></p>
+<p align="center"><img src="../assets/brand/showcase-mark.svg" width="120" alt="Originales Golden-S-Workflow-Markenzeichen" /></p>
 
-## Verwendete Originaldateien
+## Originalassets und Editorial-Grafiken
 
-| Asset | Einsatz |
+| Datei | Rolle |
 |:--|:--|
-| [showcase-mark.svg](../assets/brand/showcase-mark.svg) | Vektor-Master für README, UI- und Dokumentationspräsentation |
-| [showcase-icon.png](../assets/brand/showcase-icon.png) | Raster-Icon für Präsentation und Vorschauen |
+| [showcase-mark.svg](../assets/brand/showcase-mark.svg) | Originales Master-Vektorzeichen |
+| [showcase-icon.png](../assets/brand/showcase-icon.png) | Originales Raster-Icon |
+| [showcase-hero-dark.svg](../assets/brand/showcase-hero-dark.svg) | **Redaktionelle, eigens gestaltete Konzeptgrafik**, Dark Mode |
+| [showcase-hero-light.svg](../assets/brand/showcase-hero-light.svg) | Passende Light-Mode-Variante |
 
-Das zuvor auf GitHub verwendete mehrfarbige Infinity-Logo ist veraltet. Es soll nicht erneut als aktuelles Produktzeichen eingesetzt werden.
+Die beiden Titelgrafiken übernehmen die **Originalformen und Goldwerte des S-Zeichens**, sind aber **neu gestaltete Präsentationsgrafiken**. Sie sind **keine** Screenshots, laufenden UI-Proofs oder Nachweise einer veröffentlichten Version.
 
-## Farben
+## Markenfarben
 
-| Rolle | Wert | Verwendung |
-|:--|:--|:--|
-| Gold-Highlight | `#F7D774` | S-Logo, helles Ende |
-| Amber | `#E59E2E` | S-Logo, Verlauf/Endpunkt |
-| Graphite | `#1A242C` | Logo-Hintergrund oben |
-| Near-black | `#0B1014` | Logo-Hintergrund unten |
-| Off-white | `#E8EEF0` | Helle Konturen |
-| UI-Gold-Akzent | `#F6D26B` | Variable der App-Oberfläche, **nicht** automatisch Logofarbe |
+| Einsatz | Wert |
+|:--|:--|
+| Gold Highlight (Logo) | `#F7D774` |
+| Amber Verlauf (Logo) | `#E59E2E` |
+| Logo Background 1 | `#1A242C` |
+| Logo Background 2 | `#0B1014` |
+| Off-white Details | `#E8EEF0` |
+| Variabler UI-Gold-Akzent | `#F6D26B` |
 
-**Wichtig:** Logo-Hexwerte und Theme-Variablen unterscheiden sich leicht. Die App bietet außerdem alternative Akzente (z. B. Mint, Himmel, Violett, Koralle). Die **Produktmarke bleibt gold**; alternative UI-Themes ändern nicht das Markenzeichen.
+Das Logo wird **nicht** je nach aktivem App-Theme umgefärbt; nur die Umgebung darf Dark/Light-Varianten haben. App-Theme-Tokens und Logo-Gradienten sind absichtlich nicht zwingend identisch.
 
-## Präsentationsregeln
+## Regeln für Projektbilder
 
-- Originales Logo auf einer ruhigen dunklen oder neutralen Umgebung verwenden; keine generische Workflowgrafik als Hauptlogo ausgeben.
-- Gut lesbare Größe und genügend Innenabstand. Nicht strecken, nicht nachzeichnen, keine Schatten/Verläufe nach Belieben hinzufügen.
-- Screenshots mit **konkretem Build, Datum und synthetischen Daten** aufnehmen; ältere Bilder nur als historische Vorschau kennzeichnen.
-- Auf hellem und dunklem GitHub-Theme, Desktop und Mobilgerät testen; SVG- und PNG-Darstellung abgleichen.
-- Fremdmarken wie n8n nur beschreibend und korrekt attribuiert erwähnen.
+1. Aktuelles Logo unverzerrt, mit Abstand und mit vernünftigem Kontrast verwenden.
+2. Hero-Grafiken klar als Konzept kennzeichnen, keine UI-Funktionalität erfinden.
+3. Alte mint-/türkisfarbene App-Screenshots ausschließlich im [historischen Archiv](VISUAL_ARCHIVE.md) zeigen.
+4. Neue Screenshots nur aus einem gestarteten, nachvollziehbar versionierten Build aufnehmen; Testdaten verwenden und Build-/Datum angeben.
+5. Dokumentationslinks, SVG-Rendering und Bilder in GitHub Dark/Light und auf kleinen Displays manuell prüfen.
 
-[Historische Bilder](VISUAL_ARCHIVE.md) · [README](../README.md)
+[Zurück zur README](../README.md)
