@@ -1,6 +1,6 @@
 # Showcase Studio · Anwenderhandbuch
 
-> **Entwicklungsstand, keine öffentliche Funktionsgarantie.** Diese Anleitung fasst die dokumentierte Produktarchitektur und die vorhandenen Entwicklungszweige zusammen. Bezeichnungen und Funktionen können sich bis zum ersten offiziellen Release ändern.
+> **Stand: öffentliches [Beta-4-Pre-release](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4).** Die folgende Nutzung orientiert sich an der Produktarchitektur und den Release Notes; eine unabhängige Windows-/Security-Abnahme ist damit nicht belegt. Konkrete Details können sich bis Stable ändern.
 
 ## 1 · Workflows einlesen
 
@@ -15,7 +15,7 @@
 - **Notizen:** Sticky Notes und Beschriftungen lesen; sensible Inhalte ausschließlich im privaten Kontext anzeigen.
 - **Präsentationsansicht:** Für den jeweiligen Termin eine gut lesbare Darstellung wählen und den Ablauf logisch statt technisch erzählen.
 
-Fortgeschrittene Entwicklungszweige enthalten zusätzliche Konzepte wie Workflow-Landkarte, Aufrufe von Sub-Workflows, Layout-Entzerrung, Node-Erklärungen und Versionsvergleich. **Diese sind nicht als bereits öffentlich erhältlich zu verstehen.**
+Die **Beta-4-Release-Notes beschreiben** außerdem Workflow-Landkarte, Sub-Workflows, Layout-Entzerrung, Node-Erklärungen und Versionsvergleich. Welche Fälle in deiner Testumgebung funktionieren, muss am tatsächlichen Paket geprüft werden.
 
 ## 3 · Für Kunden verständlich präsentieren
 
@@ -31,7 +31,7 @@ Dadurch kann Showcase Studio als **Präsentations-/Dokumentationswerkzeug** dien
 
 ## 4 · Ausgabe und Veröffentlichung
 
-Im fortgeschrittenen privaten Entwicklungszweig sind Exportformate wie interaktives HTML, SVG, PNG, Markdown, Mermaid, JSON-Darstellung, PDF-Handout und einbettbare HTML-Ansichten implementiert beziehungsweise vorgesehen. **Welche Formate ein öffentlicher Build wirklich unterstützt, sagen ausschließlich dessen Release Notes.**
+Die **Beta-4-Release-Notes nennen** interaktives HTML, SVG, PNG, Markdown, Mermaid, PDF-Handout, Galerien und einbettbare Ansichten. Welche Funktionen in der aktuellen Installation tatsächlich verlässlich funktionieren, muss getestet werden. Make- und Zapier-Looks sind **keine** Unterstützung für Make-/Zapier-Dateiimporte.
 
 Vor dem Teilen: Testdaten wählen, private Originaltexte prüfen, Risiko- und Datenfreigabe bestätigen, Ausgabe selbst öffnen und den Inhalt gegen die freigegebene Vorschau vergleichen.
 
