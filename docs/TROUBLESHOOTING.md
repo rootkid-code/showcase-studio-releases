@@ -1,10 +1,10 @@
 # Fehlerbehebung · Showcase Studio
 
-> Aktuell gibt es noch **kein öffentliches Installationspaket**. Die Hinweise unten helfen bei der Vorbereitung und gelten später nur, soweit die konkrete Release-Version sie bestätigt.
+> **Öffentliche Vorabversion vorhanden:** [`v1.0.0-beta.4`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4). Die Hinweise orientieren sich an der Beta-4-Release-Beschreibung; sie sind keine unabhängig durchgeführten Windows-Tests.
 
 ## Ich finde keine Installationsdatei
 
-Im Repository existieren nur Produktinformationen. [Releases](https://github.com/rootkid-code/showcase-studio-releases/releases) enthält Stand 23.11.2026 noch keine Version. GitHub **Code → Download ZIP** ist keine ausführbare Windows-App.
+Öffne die [Beta-4-Release-Seite](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4). Unter **Assets** befindet sich `ShowcaseStudio-1.0.0-beta.4.zip`. Nicht die automatisch erzeugte **Source code (zip)** herunterladen. ZIP vollständig entpacken und `01-INSTALLIEREN.vbs` aus dem entpackten Ordner starten.
 
 ## Die n8n-Verbindung klappt nicht
 
@@ -28,7 +28,7 @@ Mit einem synthetischen, kleinen JSON-Workflow wiederholen. Bei großen Flows zu
 
 ## Installation / Start / Upgrade
 
-Wenn künftig ein offizielles Paket verfügbar ist: Release Notes, Betriebssystemversion, Installer-Log und lokale Berechtigungen prüfen. Bestehende Bibliotheksdaten vorher sichern. **Keine** fremden Python-, Docker- oder n8n-Installationen löschen, um ein Studio-Problem zu beheben.
+Bei Problemen mit Beta 4: die zugehörigen Release Notes, Windows-Version, Entpackung, Installer-Log und lokale Berechtigungen prüfen. Vor einem Update die Bibliothek sichern. Bestehende Bibliotheksdaten vorher sichern. **Keine** fremden Python-, Docker- oder n8n-Installationen löschen, um ein Studio-Problem zu beheben.
 
 ## Einen Fehler melden
 
