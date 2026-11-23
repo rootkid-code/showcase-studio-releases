@@ -1,6 +1,6 @@
 # Support & Hilfe
 
-Dieses Repository dient als **öffentlicher Release- und Informationskanal** für Showcase Studio. **Noch kein öffentlicher Download vorhanden** (Stand 23. November 2026).
+Dieses Repository dient als **öffentlicher Release- und Informationskanal** für Showcase Studio. **Öffentliches Prerelease [v1.0.0-beta.3](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3) verfügbar** (Stand 23. November 2026); keine bestätigte Stable-Abnahme.
 
 ## Vor einer Meldung
 
@@ -26,8 +26,8 @@ Bitte **kein öffentliches Issue** mit Schwachstellendetails anlegen. Den vertra
 
 ## Häufige Installationsfragen
 
-- **Es gibt keine ZIP zum Herunterladen:** Bisher ist kein GitHub Release veröffentlicht. Der `Code`-Download ist kein Installer.
+- **Download:** In den [Assets von Beta.3](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3) liegt **ShowcaseStudio-1.0.0-beta.3.zip**. Der GitHub-**Code → Download ZIP**-Button ist kein Installer.
 - **n8n-Verbindung schlägt fehl:** Prüfe zunächst den Host deiner n8n-Instanz, die Erreichbarkeit und die erforderlichen Leseberechtigungen; teile den API-Key niemals öffentlich.
-- **Windows-Setup startet nicht:** Wenn später ein Release existiert, gelten die dort mitgelieferten Hinweise, die lokalen Fallbacks und die jeweiligen Supportinformationen. Vorher lässt sich kein öffentliches Installationspaket diagnostizieren.
+- **Windows-Setup startet nicht:** ZIP-Hash prüfen, Archiv vollständig entpacken und die in Beta.3 enthaltenen Installer-Hinweise beachten. Sicherheitssperren nicht pauschal umgehen. [Installationshilfe](docs/GETTING_STARTED.md).
 
 [Zurück zur Produktübersicht](README.md)
