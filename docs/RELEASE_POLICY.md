@@ -1,8 +1,8 @@
 # Veröffentlichungsstandard – Showcase Studio
 
-> Stand: 23. November 2026. **Prozessbeschreibung, keine Aussage über durchgeführte oder bestandene Prüfungen.** Aktuell existiert noch kein öffentlicher GitHub Release.
+> Stand: 23. November 2026. **Prozessbeschreibung, keine Aussage über durchgeführte oder bestandene Prüfungen.** **Ein öffentliches Prerelease v1.0.0-beta.3 wurde veröffentlicht.** Die Veröffentlichung ist **kein Beleg**, dass sämtliche Gates bestanden wurden.
 
-Dieses öffentliche Repository enthält Produktinformationen und erst **nach dokumentierter Freigabe** Release-Dateien. Der private Quellcode und der Lizenz-Publisher bleiben getrennt.
+Dieses öffentliche Repository enthält Produktinformationen und **Release-Dateien für die aktuelle Beta.3**. Der private Quellcode und der Lizenz-Publisher bleiben getrennt.
 
 ## Freigabe-Gates
 
@@ -29,6 +29,10 @@ Ein Release darf erst als freigegeben bezeichnet werden, wenn die jeweils releva
 - Private Ed25519-Signaturschlüssel, Zertifikate mit geheimen Schlüsseln, Tokens oder `.env`-Dateien
 - Echte n8n-Workflows/Kundendaten, unbereinigte Logs, persönliche Dateien
 - Ungeprüfte Build-Caches und fremde Installationsdaten
+
+## Nachweisstand für das vorhandene Beta-Release
+
+[**v1.0.0-beta.3**](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3) ist als **Prerelease** mit ZIP, Manifest und Signaturdatei vorhanden. **Nicht unabhängig belegt:** realer Windows-E2E-Test, kryptografische Signaturprüfung, ZIP-Privacy-Scan und nachvollziehbarer privater Source-SHA des Pakets. Deshalb **kein Stable-GO**. [Metadaten und offene Prüfpunkte](releases/v1.0.0-beta.3.md).
 
 ## Quelle der Wahrheit
 
