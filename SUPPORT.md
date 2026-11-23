@@ -1,6 +1,6 @@
 # Support & Hilfe
 
-Dieses Repository dient als **öffentlicher Release- und Informationskanal** für Showcase Studio. **Noch kein öffentlicher Download vorhanden** (Stand 23. November 2026).
+Dieses Repository dient als **öffentlicher Release- und Informationskanal** für Showcase Studio. **Aktuelle öffentliche Vorabversion:** [`v1.0.0-beta.4`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) (Stand 23. November 2026). Keine stabile Produktfreigabe oder zugesicherte Support-SLA.
 
 ## Vor einer Meldung
 
@@ -26,8 +26,8 @@ Bitte **kein öffentliches Issue** mit Schwachstellendetails anlegen. Den vertra
 
 ## Häufige Installationsfragen
 
-- **Es gibt keine ZIP zum Herunterladen:** Bisher ist kein GitHub Release veröffentlicht. Der `Code`-Download ist kein Installer.
+- **Wo ist die ZIP?** Im [Beta-4-Release](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) unter **Assets**. `Code → Download ZIP` ist kein Installer.
 - **n8n-Verbindung schlägt fehl:** Prüfe zunächst den Host deiner n8n-Instanz, die Erreichbarkeit und die erforderlichen Leseberechtigungen; teile den API-Key niemals öffentlich.
-- **Windows-Setup startet nicht:** Wenn später ein Release existiert, gelten die dort mitgelieferten Hinweise, die lokalen Fallbacks und die jeweiligen Supportinformationen. Vorher lässt sich kein öffentliches Installationspaket diagnostizieren.
+- **Windows-Setup startet nicht:** Beta-ZIP vollständig entpacken und `01-INSTALLIEREN.vbs` laut Release Notes ausführen. Kein Windows-Schutzsystem pauschal deaktivieren, keine fremden Python-/n8n-Installationen löschen. Vor einem Update Daten sichern.
 
 [Zurück zur Produktübersicht](README.md)
