@@ -4,7 +4,9 @@
 
 ## Einstieg und Anwendung
 
-- [Erste Schritte](GETTING_STARTED.md) – Downloadstatus, Systemvorbereitung und erster Workflow nach einem tatsächlichen Release
+**Öffentliche Version:** [v1.0.0-beta.3 (Prerelease)](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3) · [Artefakte und offene Nachweisgrenzen](releases/v1.0.0-beta.3.md). Keine Stable-Freigabe.
+
+- [Erste Schritte](GETTING_STARTED.md) – Beta.3-Download, Voraussetzungen und erster Workflow
 - [Studio verwenden](USAGE_GUIDE.md) – lesen, erklären, strukturiert präsentieren
 - [Datenschutz und Exporte](PRIVACY_AND_EXPORT.md) – Sensibles nicht versehentlich weitergeben
 - [Fehlerbehebung](TROUBLESHOOTING.md) – Verbindung, Import, Setup und bereinigte Fehlerberichte
