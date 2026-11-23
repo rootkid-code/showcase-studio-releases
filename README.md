@@ -1,150 +1,136 @@
 <div align="center">
 
-<img src="assets/brand/showcase-mark.svg" width="88" height="88" alt="Showcase Studio – originales Markenlogo" />
+<img src="assets/brand/showcase-mark.svg" width="106" height="106" alt="Showcase Studio: goldenes S mit Workflow-Verbindungen auf anthrazitfarbenem Grund" />
 
 # SHOWCASE STUDIO
 
-**Automationen verstehen. Workflows überzeugend präsentieren.**
+### Komplexe n8n-Workflows. Klar erzählt.
 
-Ein visueller, schreibgeschützter Workspace für n8n-Workflows – von der ersten Verbindung bis zur bewusst freigegebenen Präsentation.
+**Der lokale Workspace, um Automationen zu verstehen, zu erklären und ihre Darstellung kontrolliert zu teilen.**
 
 <p>
-  <img src="https://img.shields.io/badge/Windows-11-2563EB?style=flat-square&logo=windows11&logoColor=white" alt="Zielplattform: Windows 11" />
-  <img src="https://img.shields.io/badge/n8n-Read--only-16A085?style=flat-square" alt="n8n-Integration: schreibgeschützt ausgelegt" />
-  <img src="https://img.shields.io/badge/Release-Noch%20nicht%20ver%C3%B6ffentlicht-D97706?style=flat-square" alt="Noch kein öffentlicher Release" />
+  <img src="https://img.shields.io/badge/Brand-Gold%20%26%20Graphite-F7D774?style=flat-square&labelColor=0B1014" alt="Markenfarben Gold und Graphite" />
+  <img src="https://img.shields.io/badge/Plattform-Windows%20zuerst-26343D?style=flat-square" alt="Zielplattform Windows" />
+  <img src="https://img.shields.io/badge/Status-Kein%20Public%20Release-E59E2E?style=flat-square&labelColor=0B1014" alt="Aktuell kein öffentliches Release" />
 </p>
 
+[**Produkt verstehen**](#warum-showcase-studio) ·
+[**Funktionen**](#produktbereiche) ·
+[**Anleitungen**](#dokumentation) ·
 [**Releases**](https://github.com/rootkid-code/showcase-studio-releases/releases) ·
-[**Produktvorschau**](#produktvorschau) ·
-[**Installation**](#installation-nach-releasefreigabe) ·
-[**Hilfe**](SUPPORT.md) ·
-[**Sicherheit**](SECURITY.md)
+[**Hilfe**](SUPPORT.md)
 
 </div>
 
-<p align="center">
-  <img src="assets/brand/repo-hero.svg" width="100%" alt="Showcase Studio: originale Konzeptgrafik zu einem visuellen, schreibgeschützten Workflow-Explorer – keine Aufnahme der Anwendung" />
-</p>
+---
 
 > [!IMPORTANT]
-> **Aktuell noch kein öffentlicher Download.** Dieses Repository ist für die spätere Verteilung von Showcase Studio vorgesehen. Zum Stand **23. November 2026** gibt es hier **keine veröffentlichten GitHub Releases**. Ein privater Release Candidate wird entwickelt; die native Windows-Installer-End-to-End-Abnahme steht noch aus. Verbindlich sind immer die tatsächlich vorhandenen Einträge unter [Releases](https://github.com/rootkid-code/showcase-studio-releases/releases). Das GitHub-Menü **Code → Download ZIP** enthält **nicht** die Anwendung.
+> **Noch kein öffentlicher Anwendungsdownload.** Zum Stand **23. November 2026** gibt es in diesem Repository keine veröffentlichten Release-Artefakte. Die abgebildeten Funktionen und Workflows stammen aus der privaten Entwicklung und sind **nicht als freigegebene Windows-Version** zu verstehen. Aktuelle Downloads erscheinen ausschließlich unter [GitHub Releases](https://github.com/rootkid-code/showcase-studio-releases/releases). **Code → Download ZIP** lädt nur dieses Informations-Repository.
 
-## Was ist Showcase Studio?
+## Warum Showcase Studio?
 
-In n8n steckt die Logik eines Prozesses oft in komplexen Node-Netzwerken, technischen Verbindungen und langen Sticky Notes. **Showcase Studio macht daraus einen verständlichen Präsentations- und Review-Workspace**, ohne einen Workflow zum Vorführen ausführen zu müssen.
+Ein n8n-Workflow kann technisch sauber sein und trotzdem schwer zu erklären: viele Knoten, Verbindungen, Notizen und Details. In einem Kundentermin interessiert aber nicht zuerst der JSON-Code – sondern **welcher Prozess abläuft, warum er sinnvoll ist und was dabei sicher geteilt werden darf**.
 
-| Entdecken | Verstehen | Präsentieren |
-| :--- | :--- | :--- |
-| n8n-Workflows über einen geführten Verbindungsprozess oder JSON-Import betrachten. | Canvas, Node-Fokus, Abschnitte und Notizen helfen beim Lesen komplexer Abläufe. | Ansichten aufbereiten und Inhalte vor einem öffentlichen Export bewusst prüfen. |
-| **Read-only als Produktprinzip** | **Vom Detail zur Gesamtansicht** | **Freigabe statt versehentlichem Teilen** |
+Showcase Studio ist als **read-only Präsentations- und Dokumentationsumgebung** für solche Workflows entwickelt. Es ersetzt **nicht** n8n, führt keine Workflows zur Demonstration aus und soll die Originalkonfiguration nicht verändern.
 
-### Für wen?
+| 01 · Verstehen | 02 · Präsentieren | 03 · Freigeben |
+|:--|:--|:--|
+| Workflow-Übersicht, Node-Beziehungen und Notizen lesbar erschließen. | Komplexe Abläufe in verständliche Ansichten, Abschnitte und Erklärungen gliedern. | Darstellungen vor dem Teilen auf vertrauliche Informationen prüfen und bewusst freigeben. |
 
-Für **KI- und Automationsberater, Agenturen, Entwickler und Projektteams**, die technische Workflows gegenüber Kunden oder Kollegen strukturiert erklären möchten – ohne dafür Zugang zu einem ausführbaren Workflow zu benötigen.
+**Gedacht für:** Automationsagenturen, Berater, Entwickler, interne Prozessverantwortliche und Teams, die n8n-Logik vorführen, dokumentieren oder abnehmen lassen möchten.
 
-## Produktvorschau
+## Produktbereiche
 
-<p align="center">
-  <img src="assets/screenshots/workspace-overview.png" width="100%" alt="Entwicklungs-Screenshot der Showcase-Studio-Übersicht mit Demo-Workflows, Workspace-Navigation und Schnellaktionen" />
-  <br />
-  <sub>01 — Workspace & Dashboard · Entwicklungsansicht mit ausschließlich beispielhaften Workflow-Inhalten</sub>
-</p>
+Die folgenden Bereiche sind im privaten Entwicklungsprojekt dokumentiert. Ihre Verfügbarkeit im späteren öffentlichen Paket richtet sich ausschließlich nach dessen Release Notes.
 
-<table>
-<tr>
-<td width="50%" valign="top">
-  <img src="assets/screenshots/workflow-details.png" alt="Workflow-Präsentationsstudio mit Canvas, Prozessabschnitten, Sticky Notes und Element-Inspektor" width="100%" />
-  <br /><sub><strong>02 — Workflow-Canvas.</strong> Zusammenhänge und Notizen gezielt erklären.</sub>
-</td>
-<td width="50%" valign="top">
-  <img src="assets/screenshots/n8n-connection.png" alt="Verbindungsassistent mit lokaler n8n-Adresse und Anleitung für lesende API-Berechtigungen" width="100%" />
-  <br /><sub><strong>03 — n8n verbinden.</strong> Geführter Einstieg und Hinweise zu minimalen Rechten.</sub>
-</td>
-</tr>
-</table>
+| Bereich | Nutzen |
+|:--|:--|
+| **n8n-Verbindung & JSON-Import** | Workflows aus einer passenden Instanz oder aus Dateien als Darstellung übernehmen. |
+| **Workflow-Studio** | Canvas, Node-Fokus, Sticky Notes und Abschnitte zum verständlichen Durchgehen. |
+| **Workflow-Landkarte** | Abhängigkeiten und Aufrufe zwischen Workflows veranschaulichen (fortgeschrittener Entwicklungszweig). |
+| **Versionen & Vergleich** | Änderungen an Workflow-Strukturen im Entwicklungszweig nachvollziehen. |
+| **Export & Review** | Geplante beziehungsweise im Entwicklungszweig implementierte Ausgaben wie HTML, SVG, PNG, Markdown, Mermaid und PDF – mit Freigabeprozess. |
+| **Lokaler Betrieb** | Windows-zentrierter Einstieg ohne Pflicht zu einer von uns betriebenen Cloud. |
 
-<sub>**Hinweis zu den Bildern:** Originale Showcase-Studio-UI-Vorschauen aus dem privaten Entwicklungsprojekt, mit Demo- beziehungsweise Beispielinhalten. Sie sind weder Nachweis einer öffentlichen Release-Freigabe noch Garantie für eine unveränderte finale Oberfläche.</sub>
+<sub>Die präzise Trennung von implementiertem Entwicklungsstand, noch ausstehender QA und geplantem Funktionsumfang findest du im [Feature-Status](docs/FEATURE_STATUS.md). Diese Tabelle ist keine Zertifizierung oder Zusage einer öffentlich installierbaren Version.</sub>
 
-## So ist der Workflow gedacht
+## So funktioniert der geplante Ablauf
 
 ```mermaid
 flowchart LR
-    A["n8n / JSON-Import"] --> B["Workflow lesen"]
-    B --> C["Canvas & Abschnitte erkunden"]
-    C --> D["Inhalte manuell prüfen"]
+    A["n8n / JSON"] --> B["Nur lesender Import"]
+    B --> C["Canvas & Dokumentation"]
+    C --> D["Manuelle Datenschutzprüfung"]
     D --> E["Freigegebene Präsentation"]
 ```
 
-- **Keine Workflow-Ausführung zum Präsentieren:** Showcase Studio ist auf lesende Erkundung ausgelegt und ersetzt nicht die n8n-Laufzeit.
-- **Klare Trennung von privat und öffentlich:** Lokale Originalinhalte und bewusst freigegebene Ansichten sind unterschiedliche Bereiche.
-- **Kontrolle vor dem Teilen:** Node-Texte, Sticky Notes und Geschäftslogik können vertraulich sein – vor einem Export müssen sie geprüft werden.
-- **Lokaler Windows-Einstieg:** Die geplante Distribution setzt auf einen geführten Installer statt auf Terminalbefehle im Alltag.
+**Deine eigentlichen Automationen bleiben in n8n.** Eine Präsentationskopie ist etwas anderes als das ausführbare Original. Für live verbundene Instanzen sind minimal berechtigte API-Zugänge erforderlich.
+
+## Produktbilder & Markenidentität
+
+<p align="center">
+  <img src="assets/brand/showcase-icon.png" width="142" alt="Offizielles Showcase Studio S-Icon in Gold auf dunklem Hintergrund" />
+  <br /><sub>Aktuelle Markenidentität: Gold / Amber / Graphite. Die originalen SVG- und PNG-Dateien entsprechen dem neueren privaten Entwicklungszweig.</sub>
+</p>
 
 > [!NOTE]
-> Diese Punkte beschreiben das im privaten Entwicklungsstand dokumentierte Produktkonzept und seine vorhandenen UI-Bereiche. Sie stellen **keine unabhängige Sicherheitszertifizierung** und keinen vollständig abgenommenen Windows-Release dar.
+> Die vorhandenen UI-Screenshots stammen noch aus einem **früheren Entwicklungsstand mit anderer Farb- und Logo-Identität**. Um keine veraltete Oberfläche als neu auszugeben, erscheinen sie nicht als aktuelle Produktgalerie. Sie sind transparent im [historischen Vorschauarchiv](docs/VISUAL_ARCHIVE.md) dokumentiert. Neue Screenshots folgen erst nach verifizierter Aufnahme mit bekannter Build-Version und Demo-Daten.
 
-## Installation nach Releasefreigabe
+## Dokumentation
 
-Sobald eine tatsächlich freigegebene Windows-Version vorhanden ist:
+| Für Anwender | Inhalt |
+|:--|:--|
+| [**Erste Schritte**](docs/GETTING_STARTED.md) | Downloadstatus, Vorbereitung, Installation nach Freigabe, erster Workflow |
+| [**Studio verwenden**](docs/USAGE_GUIDE.md) | Workflow lesen, strukturieren, präsentieren und exportieren |
+| [**Datenschutz & Export**](docs/PRIVACY_AND_EXPORT.md) | Leserechte, sensible Inhalte, Freigabe und sichere Weitergabe |
+| [**Fehler beheben**](docs/TROUBLESHOOTING.md) | Verbindung, Import, Installation, Logs und typische Stolpersteine |
+| [**Feature-Status**](docs/FEATURE_STATUS.md) | Was auf welchem Entwicklungsniveau existiert und was noch fehlt |
 
-1. Die passende ZIP-Datei **ausschließlich aus** [GitHub Releases](https://github.com/rootkid-code/showcase-studio-releases/releases) herunterladen und die zugehörigen Release Notes lesen.
-2. Falls veröffentlicht, den **SHA-256-Prüfwert** mit der Release-Angabe vergleichen; die ZIP anschließend vollständig entpacken.
-3. Im entpackten Paket `00-START-HIER.html` öffnen und dem Installationsassistenten folgen. Der im Entwicklungsstand vorgesehene Einstieg heißt `01-INSTALLIEREN.vbs`.
-4. Nach erfolgreicher Installation die Anwendung über den bereitgestellten Starter beziehungsweise die angelegte Verknüpfung öffnen.
-5. Für eine n8n-Verbindung **nur erforderliche Leserechte** vergeben. API-Schlüssel niemals in Screenshots, Issues oder exportierten Beispielen veröffentlichen.
+| Projekt & Veröffentlichung | Inhalt |
+|:--|:--|
+| [Markenhandbuch](docs/BRANDING.md) | Original-Logo, Farben, Bildregeln und Quellen |
+| [Release-Standard](docs/RELEASE_POLICY.md) | Tests, Sicherheitsabnahme und Veröffentlichungskriterien |
+| [Release-Notes-Vorlage](docs/RELEASE_NOTES_TEMPLATE.md) | Version, Prüfsummen, Installation, bekannte Einschränkungen |
+| [Support](SUPPORT.md) | Sichere Fehlerberichte und Kontaktwege |
+| [Sicherheit](SECURITY.md) · [Rechte](NOTICE.md) | Responsible Disclosure und Nutzungs-/Markenhinweise |
 
-**Voraussetzungen / Umfang:** Zielplattform ist Windows 11; eine erreichbare n8n-Instanz oder ein geeigneter JSON-Workflow ist für die entsprechende Nutzung erforderlich. Verbindliche Systemvoraussetzungen, Paketnamen und gegebenenfalls geänderte Installationsschritte werden **erst in den jeweiligen Release Notes** festgelegt. Es ist derzeit **kein installierbares Paket** in diesem Repository veröffentlicht.
+## Installation & Downloads
 
-## Downloads & Versionsstand
+**Erst nach einer tatsächlichen Freigabe** stehen eine ZIP beziehungsweise andere geprüfte Installationsdateien unter [Releases](https://github.com/rootkid-code/showcase-studio-releases/releases) bereit. Dann gilt:
 
-| Bereich | Öffentlicher Stand |
-| :--- | :--- |
-| [Neueste Releases](https://github.com/rootkid-code/showcase-studio-releases/releases) | Noch keine Veröffentlichung (Stand 23.11.2026) |
-| Windows-Installer | Native End-to-End-Abnahme vor Freigabe ausstehend |
-| Release Notes / Prüfsummen | Werden je veröffentlichtem Artefakt bereitgestellt, sofern verfügbar |
-| Quellcode | Nicht Bestandteil dieses öffentlichen Distributionsrepositories |
-| Release-Prozess | [Freigabe- und Integritätskriterien](docs/RELEASE_POLICY.md) |
+1. Offizielle Release-Datei und zugehörige Release Notes prüfen.
+2. Veröffentlichte SHA-256-Prüfsumme verifizieren, falls vorhanden.
+3. Paket vollständig entpacken und die mitgelieferte Start-/Installationsanleitung lesen.
+4. Das Studio öffnen und mit **synthetischen Testdaten** beginnen.
+5. Erst anschließend eine n8n-Verbindung mit möglichst geringen Berechtigungen einrichten.
 
-**Wichtig:** Der private Entwicklungsstand und interne Versionsbezeichnungen sind **keine** öffentlichen Downloadversionen.
+Die früher intern verwendeten Dateien `00-START-HIER.html` und `01-INSTALLIEREN.vbs` sind **keine** Dateien dieses öffentlichen Repositories. Verbindlich sind immer die Installationshinweise des tatsächlich veröffentlichten Pakets.
 
-## Sicherheit & Datenschutz
+**Aktueller Veröffentlichungsstand:** Kein Release, kein garantierter Installer, keine bestätigte Plattformabnahme.
 
-Showcase Studio behandelt die **Lesbarkeit technischer Automationen** als Produktfunktion – und die **Freigabe von Informationen** als eigenen Arbeitsschritt. Das ersetzt keine Prüfung der gewählten n8n-Berechtigungen, der Exportinhalte oder der tatsächlichen Windows-Paketierung.
+## Vertrauen statt falscher Versprechen
 
-- n8n-Zugriff auf das notwendige Minimum einschränken; keine Schreib-, Ausführungs- oder Credential-Rechte für reine Präsentationen erteilen.
-- Vor einer Veröffentlichung alle personenbezogenen Informationen, URLs, interne Kommentare, Credentials und Geschäftsdetails prüfen.
-- Keine echten API-Schlüssel, Workflow-Exporte oder vollständigen Diagnoseprotokolle in öffentliche Issues hochladen.
-- Private Lizenz-Publisher, Signaturschlüssel und interne Werkzeuge dürfen **nicht** in Endnutzer-Releases gelangen.
+- **Keine stillschweigende Workflow-Ausführung:** Das Produkt ist als Anzeige- und Präsentationswerkzeug ausgelegt.
+- **Explizite Inhaltsfreigabe:** Node-Namen, Sticky Notes, URLs, Notizen und exportierte Metadaten können sensibel sein.
+- **Privater Quellcode bleibt privat:** Kein Signier-Publisher, keine privaten Schlüssel, keine echten Lizenzzertifikate oder Kundendaten in diesem Repo.
+- **Ehrliche Nachweise:** Aussagen über Windows-Stabilität, Signaturen, Tests und unterstützte Features erst nach erfolgreichem Release-Gate.
 
-Sicherheitsmeldungen: [SECURITY.md](SECURITY.md) · Hilfestellung und redigierte Fehlerberichte: [SUPPORT.md](SUPPORT.md)
+Siehe [Sicherheit](SECURITY.md), [Datenschutz/Export](docs/PRIVACY_AND_EXPORT.md) und [Release-Freigabe](docs/RELEASE_POLICY.md).
 
-## Häufige Fragen
+## Kommerziell oder Open Source?
 
-<details>
-<summary><strong>Wo kann ich Showcase Studio herunterladen?</strong></summary>
+Dieses Repository ist **ein öffentlicher Produkt- und Distributionskanal, keine Veröffentlichung des privaten Softwarequellcodes**. Dass GitHub die README und später gegebenenfalls Free-Downloads zeigt, bedeutet **nicht**, dass Showcase Studio als Open Source oder zur kostenlosen gewerblichen Weiterverwertung lizenziert wurde.
 
-Aktuell noch nicht öffentlich. Sobald eine Version freigegeben ist, erscheint sie mit Dateien und Release Notes auf der <a href="https://github.com/rootkid-code/showcase-studio-releases/releases">GitHub-Releases-Seite</a>. Ein grüner `Code`-Button ist kein Anwendungsdownload.
-
-</details>
-
-<details>
-<summary><strong>Verändert Showcase Studio meine n8n-Workflows?</strong></summary>
-
-Die Anwendung ist als **Read-only-Explorer** konzipiert. Verwende trotzdem nur einen n8n-API-Key mit den minimal erforderlichen Leserechten. Die tatsächlichen Rechte werden auf Seite der n8n-Instanz durchgesetzt.
-
-</details>
-
-<details>
-<summary><strong>Ist dieses Repository Open Source?</strong></summary>
-
-Nein. Dieses öffentliche Repository dient zur Produktinformation und, nach Freigabe, zur Bereitstellung von Release-Artefakten. Eine Veröffentlichung ist **nicht automatisch eine Open-Source-Lizenz**. Siehe <a href="NOTICE.md">Rechte und Hinweise</a>; zukünftige Softwarepakete können gesonderten Nutzungsbedingungen unterliegen.
-
-</details>
+Künftige Editionen und Nutzungsbedingungen werden gesondert dokumentiert. Eine spätere Pro-Edition beziehungsweise Dienstleistung ist möglich, aber **noch nicht als kaufbares Produkt veröffentlicht**.
 
 ---
 
 <div align="center">
-  <sub>© 2026 Florian Windhager · Showcase Studio · Alle Rechte vorbehalten</sub>
+  <img src="assets/brand/showcase-mark.svg" width="38" height="38" alt="Showcase Studio" />
   <br />
-  <sub>Original-Logo und Produktgrafiken · Keine Herausgabe privater Entwicklungs- oder Lizenzierungswerkzeuge</sub>
+  <strong>Showcase Studio</strong>
+  <br />
+  <sub>Verstehen. Präsentieren. Bewusst freigeben.</sub>
+  <br />
+  <sub>© 2026 Florian Windhager · Alle Rechte vorbehalten · Kein offizielles Produkt von n8n</sub>
 </div>
