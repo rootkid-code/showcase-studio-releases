@@ -1,14 +1,14 @@
 # Showcase Studio · Aktuelle Produktprioritäten
 
-**Entscheidung vom 23. November 2026** · Gilt für die öffentliche Projektkommunikation; private experimentelle Codezweige sind davon getrennt.
+**Stand: 23. November 2026** · Die öffentliche Vorabversion [`v1.0.0-beta.4`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) ist veröffentlicht; private Entwicklungszweige und ein stabiler Produktrelease bleiben davon getrennt.
 
 ## Jetzt wichtig
 
-1. **Zuverlässige Free-/Community-Beta:** nachvollziehbarer Installationsprozess, verständliche Benutzerführung, minimale Pflichtkonfiguration.
+1. **Die vorhandene Free-/Community-Beta verbessern:** echten Download nachvollziehbar dokumentieren, Feedback sammeln, Installation und Benutzerführung testen.
 2. **Echte Funktions- und Plattformtests:** n8n-Import mit Testdaten, lesende Rechte, Exportfreigaben, Fehlerfälle, Windows-11-Installation, Upgrade und Datenintegrität.
 3. **Privacy-by-design:** sauberer Umgang mit sensiblen Nodes, Labels, URLs, Sticky Notes, Logs und öffentlichen Exports.
 4. **Produktdokumentation & Feedback:** echte Screenshots aus einem eindeutig benannten Build, verständliche Anleitungen, sinnvolle Fehlerberichte.
-5. **Ruhiger öffentlicher Auftritt:** professionelle Markenidentität, ehrliche Reifegradangaben und kein Download ohne tatsächlich vorhandenes Artefakt.
+5. **Ruhiger öffentlicher Auftritt:** professionelle Markenidentität und ehrliche Reifegradangaben; vorhandene Beta klar von späterer Stable-Freigabe unterscheiden.
 
 ## Ausdrücklich auf HOLD
 
@@ -22,7 +22,7 @@
 
 ## Nächster nachweisbarer Meilenstein
 
-**Free/Community-Beta mit dokumentiertem Abnahmeprotokoll und echtem GitHub-Release-Artefakt.** Bis dahin bleibt der Veröffentlichungsstatus *kein öffentlicher Anwendungsdownload*.
+**Stabilisierte Beta mit dokumentierter Windows-, Privacy-, A11y- und Release-Provenienz; danach eine explizite Stable-Entscheidung.** Ein Beta-ZIP existiert bereits, ist jedoch kein Nachweis aller Freigabegates.
 
 Eine Änderung dieser Entscheidung erfordert eine neue, ausdrücklich dokumentierte Produktfreigabe. **Keine automatische Vermarktung aus historischen Notizen ableiten.**
 
