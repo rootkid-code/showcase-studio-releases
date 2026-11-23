@@ -1,8 +1,8 @@
 # Veröffentlichungsstandard – Showcase Studio
 
-> Stand: 23. November 2026. **Prozessbeschreibung, keine Aussage über durchgeführte oder bestandene Prüfungen.** Aktuell existiert noch kein öffentlicher GitHub Release.
+> Stand: 23. November 2026. **Prozessbeschreibung, keine Aussage über durchgeführte oder bestandene Prüfungen.** Der öffentliche Pre-release [`v1.0.0-beta.4`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) existiert; diese Policy definiert die zusätzlichen Prüfanforderungen bis zur stabilen Freigabe.
 
-Dieses öffentliche Repository enthält Produktinformationen und erst **nach dokumentierter Freigabe** Release-Dateien. Der private Quellcode und der Lizenz-Publisher bleiben getrennt.
+Dieses öffentliche Repository enthält Produktinformationen und bereits **veröffentlichte Beta-Dateien**. Eine stabile Produktfreigabe bleibt von zusätzlichen dokumentierten Nachweisen abhängig. Privater Anwendungscode und Lizenz-Publisher bleiben getrennt.
 
 ## Freigabe-Gates
 
@@ -20,7 +20,7 @@ Ein Release darf erst als freigegeben bezeichnet werden, wenn die jeweils releva
 | Typ | Bedeutung |
 | :--- | :--- |
 | Development / Private RC | Interne Entwicklungsstände; **kein** öffentlicher Download |
-| Public Preview / Pre-release | Nur bei vorhandener Datei, Release Notes und klar gekennzeichneten Einschränkungen |
+| Public Preview / Pre-release | **Aktuell: Beta 4 veröffentlicht** – mit ZIP, Release Notes, Prüfsumme und Signaturdatei, ohne daraus eine Stable-Abnahme abzuleiten |
 | Stable | Erst nach vollständiger, dokumentierter Freigabe der definierten Gates |
 
 ## Nicht veröffentlichen
