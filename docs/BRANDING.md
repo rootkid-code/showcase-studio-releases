@@ -12,8 +12,10 @@
 | [showcase-icon.png](../assets/brand/showcase-icon.png) | Originales Raster-Icon |
 | [showcase-hero-dark.svg](../assets/brand/showcase-hero-dark.svg) | **Redaktionelle, eigens gestaltete Konzeptgrafik**, Dark Mode |
 | [showcase-hero-light.svg](../assets/brand/showcase-hero-light.svg) | Passende Light-Mode-Variante |
+| [showcase-portfolio-dark.svg](../assets/brand/showcase-portfolio-dark.svg) | **Neue Portfolio-Karte**, Dark, 1440 × 600 – identisches Format wie Tresor |
+| [showcase-portfolio-light.svg](../assets/brand/showcase-portfolio-light.svg) | Passende Light-Mode-Portfolio-Karte |
 
-Die beiden Titelgrafiken übernehmen die **Originalformen und Goldwerte des S-Zeichens**, sind aber **neu gestaltete Präsentationsgrafiken**. Sie sind **keine** Screenshots, laufenden UI-Proofs oder Nachweise einer veröffentlichten Version.
+Die Titel- und Portfolio-Grafiken übernehmen die **Originalformen und Goldwerte des S-Zeichens**, sind aber **neu gestaltete Präsentationsgrafiken**. Sie sind **keine** Screenshots, laufenden UI-Proofs oder Nachweise einer veröffentlichten Version.
 
 ## Markenfarben
 
