@@ -1,40 +1,67 @@
-# Erste Schritte mit Showcase Studio
+# Erste Schritte · Showcase Studio
 
-> **Stand 23.11.2026:** Es gibt in diesem öffentlichen Repository **noch kein freigegebenes Download-Paket**. Die Anleitung beschreibt den vorgesehenen Weg nach einer tatsächlichen Veröffentlichung. Sie ist kein Nachweis, dass ein Installer bereits bereitsteht.
+**Stand: 23. November 2026 · [Öffentliche Beta 4](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4)**
 
-## 1 · Vorbereiten
+> Showcase Studio ist aktuell eine **öffentliche Vorabversion**, kein Stable-Release. Die folgenden Schritte folgen der offiziellen Beta-4-Release-Beschreibung. Diese Dokumentation hat den Installer nicht selbst auf Windows ausgeführt. Für den Einstieg ausschließlich **Testworkflows** verwenden.
 
-- Ein Windows-PC ist derzeit die primäre Zielplattform; exakte unterstützte Builds stehen künftig in den jeweiligen Release Notes.
-- Für den Einstieg reicht später ein **synthetischer, lokal erstellter n8n-Beispielworkflow** als JSON. Eine Live-Verbindung ist nicht erforderlich, um das Konzept zu verstehen.
-- Bei Live-Zugriff benötigst du eine erreichbare n8n-Instanz und einen API-Key mit minimalen erforderlichen Leseberechtigungen. Welche Scopes deine n8n-Version unterstützt, muss in deiner Instanz geprüft werden.
-- Keine produktiven Passwörter, Tokens oder echten Kundendaten für die ersten Tests verwenden.
+## 1 · Was du benötigst
 
-## 2 · Offizielle Version finden
+Die [Beta-4-Release-Notes](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) nennen:
 
-1. Öffne [GitHub Releases](https://github.com/rootkid-code/showcase-studio-releases/releases).
-2. Prüfe, ob eine **konkrete Version mit Download-Artefakt** vorhanden ist.
-3. Lies die Release Notes: Windows-Voraussetzungen, Dateinamen, bekannte Einschränkungen, Release-Kanal und Prüfsummen.
-4. Vergleiche eine veröffentlichte SHA-256-Prüfsumme vor dem Start, wenn sie angeboten wird.
-5. Lade **nicht** die automatisch angebotene Source-ZIP dieses Informationsrepositories als App herunter.
+- **Windows 10 oder 11, 64 Bit**
+- **Python 3.11 oder neuer**; laut Release Notes prüft das Setup die Voraussetzung
+- Für ersten lokalen Test: ein **synthetischer n8n-Workflow als JSON-Datei**
+- Optional: n8n lokal, in Docker, in der Cloud oder auf eigenem HTTPS-Server mit **möglichst minimalen Leserechten**
 
-**Fehlt eine Release-Datei?** Dann gibt es noch keine öffentliche Installation. Auch ein interner Beta-Name in einer Dokumentation macht daraus kein veröffentlichtes Programm.
+Keine echten Tokens, Passwörter oder vertraulichen Kunden-Workflows für erste Experimente nutzen.
 
-## 3 · Installation nach Veröffentlichung
+## 2 · Richtiges Paket herunterladen
 
-Das interne Windows-Paket war als vollständig zu entpackendes Archiv mit einem grafischen Einstieg `00-START-HIER.html` und einer Installationsroutine `01-INSTALLIEREN.vbs` konzipiert. Diese Namen können sich ändern. Folge deshalb ausschließlich der Anleitung **im tatsächlich heruntergeladenen Release-Paket**.
+1. Die [Release-Seite `v1.0.0-beta.4`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) öffnen.
+2. Im Bereich **Assets** ausdrücklich die Datei **`ShowcaseStudio-1.0.0-beta.4.zip`** wählen.
+3. **Nicht** die automatisch erzeugte `Source code (zip)`-Datei herunterladen – diese enthält keine vollständige Studio-App.
+4. Optional die heruntergeladene ZIP in PowerShell prüfen:
 
-Vor einem Upgrade: persönliche Studio-Bibliothek sichern; keine vorhandenen Datenordner vorschnell löschen. Ein Installer muss fremde Verzeichnisse und unabhängige n8n-/Python-Installationen unberührt lassen.
+   ```powershell
+   Get-FileHash .\ShowcaseStudio-1.0.0-beta.4.zip -Algorithm SHA256
+   ```
 
-## 4 · Ersten Workflow ansehen
+   Erwarteter SHA-256 aus dem Release:
+   `b67cf8906d95a0ee7da97a2363e620aee23620510513fe7294992ffc055e4bb2`
 
-1. Studio öffnen und Einführungsbildschirm beziehungsweise Workspace wählen.
-2. Demo-Workflow importieren oder – falls verfügbar – über den Verbindungsassistenten eine n8n-Instanz mit minimalen Leserechten anbinden.
-3. Im Canvas Gesamtablauf, einzelne Knoten und ggf. Sticky Notes ansehen.
-4. Eine eigene Präsentationsansicht erstellen; Originaldaten und freigegebene Informationen unterscheiden.
-5. Vor jedem Export die Datenschutz- und Freigabekontrolle durchgehen.
+## 3 · Installieren
 
-Mehr dazu im [Nutzerhandbuch](USAGE_GUIDE.md) und unter [Datenschutz/Export](PRIVACY_AND_EXPORT.md).
+1. Die heruntergeladene ZIP vollständig in einen eigenen Ordner **entpacken**.
+2. **`01-INSTALLIEREN.vbs`** aus dem entpackten Paket öffnen.
+3. Den Hinweisen des grafischen Assistenten für Installations- und Datenordner folgen.
+4. Studio über die angelegte Verknüpfung starten.
 
-## Probleme?
+Falls Windows eine Sicherheitswarnung anzeigt, **nicht** pauschal Schutzfunktionen abschalten. Dateiquelle, Checksumme und Veröffentlichungsinformationen prüfen; bei Unsicherheit zuerst [Support](../SUPPORT.md) kontaktieren.
 
-Siehe [Fehlerbehebung](TROUBLESHOOTING.md) und [Support](../SUPPORT.md). Bitte keine Zugangsdaten oder vollständigen Workflow-Dateien in Issues teilen.
+**Bereits installiert?** Die Release Notes beschreiben ein Update über **Einstellungen → Auf Updates prüfen** oder den erneut gestarteten Installer. Vor jedem Upgrade die eigene Bibliothek sichern. Behauptungen zu Datenübernahme und Rollback müssen an der eigenen Testumgebung geprüft werden.
+
+## 4 · Ohne n8n-Verbindung ausprobieren
+
+1. Eine **fiktive** n8n-JSON-Datei mit wenigen Nodes verwenden.
+2. Studio starten und die **Dateiimport-Option** wählen.
+3. Im Canvas Knoten und Verbindungen betrachten; Notizen/Abschnitte öffnen.
+4. Zwischen den sieben verfügbaren **Präsentationslooks** wählen: n8n, Make, Zapier, Blueprint, Neon Aurora, Skizzenbuch, Linienplan.
+5. Einen Präsentationsstand prüfen und nur **synthetische, ausdrücklich freigegebene Inhalte** exportieren.
+
+Die Styles Make/Zapier bedeuten **nicht**, dass das Studio bereits Make-Blueprints oder Zapier-JSONs importieren kann.
+
+## 5 · Optionale n8n-Verbindung
+
+Bei bestehender n8n-Instanz die korrekte Basisadresse und nur notwendige API-Rechte verwenden. Rechte müssen **bei n8n** begrenzt werden, nicht durch eine Anzeige in Showcase Studio. Bei Problemen nicht einfach pauschal zusätzliche Schreib-/Ausführungsrechte geben. Siehe [Fehlerbehebung](TROUBLESHOOTING.md).
+
+## 6 · Vor dem Teilen
+
+Ein Export kann URLs, Notizen, Node-Namen oder vertrauliche Prozessstruktur enthalten. **Prüfen → bereinigen → manuell freigeben → die tatsächliche exportierte Datei ansehen.** Der Privacy-Scanner hilft, ersetzt aber keine fachliche Freigabe.
+
+[Datenschutz & Export](PRIVACY_AND_EXPORT.md) · [Anwenderhandbuch](USAGE_GUIDE.md) · [Feature-Status](FEATURE_STATUS.md)
+
+## Feedback
+
+Fehler mit **Version, Windows-Build, Reproduktionsschritten und synthetischem Beispiel** melden. Nie Zugangsdaten, Workflow-Rohdaten oder komplette Logs in öffentliche Issues einfügen.
+
+[Support](../SUPPORT.md) · [Releases](https://github.com/rootkid-code/showcase-studio-releases/releases) · [Zurück zur README](../README.md)
