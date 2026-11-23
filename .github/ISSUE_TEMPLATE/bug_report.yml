@@ -1,0 +1,50 @@
+name: Fehlerbericht
+description: Problem mit einem veröffentlichten Showcase-Studio-Paket melden (keine Secrets).
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bitte nur **offizielle veröffentlichte Releases** melden. Keine API-Keys, Tokens, Kundendaten, echten Workflow-Exporte oder unbereinigten Logs posten. Sicherheitslücken bitte privat über SECURITY.md melden.
+  - type: input
+    id: version
+    attributes:
+      label: Öffentliche Release-Version
+      description: Versionsnummer und ZIP-Dateiname aus GitHub Releases (falls vorhanden)
+      placeholder: "z. B. vX.Y.Z / Dateiname"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows-Version
+      placeholder: "Windows 11, Build ..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduktionsschritte
+      description: Verwende ausschließlich fiktive und anonymisierte Beispiele.
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Erwartetes Verhalten
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Tatsächliches Verhalten
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Datenschutz-Check
+      options:
+        - label: Ich habe alle Zugangsdaten, personenbezogenen Daten und internen Informationen entfernt.
+          required: true
