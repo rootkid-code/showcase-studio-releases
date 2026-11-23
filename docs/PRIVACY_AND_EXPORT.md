@@ -1,6 +1,6 @@
 # Datenschutz & kontrollierte Workflow-Freigabe
 
-> Diese Seite beschreibt sichere **Nutzungsprinzipien**. Sie ist weder ein Audit noch eine Zertifizierung des derzeit unveröffentlichten Produkts.
+> Diese Seite beschreibt sichere **Nutzungsprinzipien**. Sie ist weder ein Audit noch eine Zertifizierung der aktuell verfügbaren **Beta 4**.
 
 ## Schutzbereiche
 
@@ -20,7 +20,7 @@ Für Präsentationen werden deshalb zwei Ebenen unterschieden:
 - **Export selbst öffnen:** HTML, PDF, SVG, PNG und JSON können verschiedene Informationen transportieren; tatsächlichen Inhalt kontrollieren.
 - **Freigabe dokumentieren:** was geteilt wurde, mit wem, zu welchem Zweck und auf welchem Versionsstand.
 
-Die private Entwicklung enthält einen erweiterten Prüfungsschritt mit Kategorien wie Credentials, Personendaten, internen Adressen, IDs, Links und Notizen. **Das ist kein Nachweis**, dass ein heute herunterladbares Produkt diese Prüfungen bereits zuverlässig durchführt.
+Die private Entwicklung enthält einen erweiterten Prüfungsschritt mit Kategorien wie Credentials, Personendaten, internen Adressen, IDs, Links und Notizen. **Das ist kein unabhängig erbrachter Nachweis**, dass alle im [Beta-4-Release](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) beschriebenen Prüfungen in jeder realen Umgebung zuverlässig sämtliche sensiblen Inhalte erkennen.
 
 ## Lokaler Betrieb und Diagnose
 
