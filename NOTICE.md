@@ -1,12 +1,15 @@
-# Rechte & Markenhinweise
+# Rechte, Marken & Projektidentität
 
-Copyright © 2026 Florian Windhager. **Alle Rechte vorbehalten.**
+**© 2026 rootkid-code. Alle Rechte vorbehalten.**
 
-Showcase Studio, seine Markenassets, zugehörige Grafiken und öffentlich bereitgestellte Dokumentation sind nicht dadurch automatisch frei lizenziert, dass dieses Repository öffentlich einsehbar ist.
+Dieses öffentliche Repository präsentiert Showcase Studio unter dem GitHub-Projektnamen `rootkid-code`. Es veröffentlicht **keinen privaten Anwendungscode** und erteilt durch seine öffentliche Sichtbarkeit **keine Open-Source-Lizenz**.
 
-- Dieses Repository dient der **Produktinformation und zukünftigen Distribution**; es ist keine Veröffentlichung des privaten Softwarequellcodes.
-- Es wurde für dieses Repository **keine Open-Source-Softwarelizenz** erteilt.
-- Die Nutzung zukünftiger Anwendungs-Binaries richtet sich nach den mit dem jeweiligen Release bereitgestellten Bedingungen.
-- Namen und Marken Dritter (insbesondere n8n und Windows) gehören ihren jeweiligen Inhabern. Showcase Studio ist kein offizielles Produkt dieser Anbieter.
+- Die hier bereitgestellten README-Texte, Originalmarken und Produktgrafiken dienen der **Information und Präsentation**.
+- Öffentliche GitHub-Sichtbarkeit ist **keine pauschale Erlaubnis**, Logo, Dokumentation oder zukünftige Softwareartefakte für andere Produkte weiterzuverwenden.
+- Welche Nutzungsbedingungen für eine tatsächlich freigegebene Anwendung gelten, muss **vor** ihrer Veröffentlichung separat dokumentiert werden.
+- Das Projekt befindet sich in der Vorbereitung einer **Free-/Community-Beta**. Verkauf, Preisangaben und Pro-Vermarktung stehen ausdrücklich auf **HOLD**.
+- Die Namen, Logos und Rechte Dritter – insbesondere n8n und Windows – verbleiben bei ihren jeweiligen Inhabern. Showcase Studio ist **kein offizielles Produkt** dieser Anbieter.
 
-Die Bilddateien unter `assets/` dienen der veranschaulichenden Darstellung von Showcase Studio. Nicht als allgemeines Asset-Paket zur Weiterverwendung lizenziert.
+**Vertrauenshinweis:** Ein Markenzeichen, Screenshot, Repository-Commit oder GitHub-Badge ist kein Nachweis, dass eine installierbare Version existiert oder für den produktiven Einsatz geprüft wurde.
+
+[Produktübersicht](README.md) · [Produktprioritäten](docs/PROJECT_DIRECTION.md) · [Sicherheit](SECURITY.md)
