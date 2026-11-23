@@ -1,6 +1,6 @@
 # Feature-Status & Produktgrenzen
 
-**Stand: 23.11.2026.** Diese Übersicht trennt **Code beziehungsweise Konzeption in privaten Entwicklungszweigen** von einer **öffentlich installierbaren, überprüften Anwendung**. Sie ist kein Testprotokoll.
+**Stand: 23.11.2026.** Diese Übersicht trennt **Code beziehungsweise Konzeption in privaten Entwicklungszweigen** von einer **öffentlich verfügbaren Beta, deren vollständige Abnahme noch nicht belegt ist**. Sie ist kein Testprotokoll.
 
 | Bereich | Aktueller Entwicklungsbezug | Öffentlich freigegeben? |
 |:--|:--|:--|
