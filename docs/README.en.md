@@ -15,7 +15,7 @@ A local, read-only workspace for explaining, reviewing, and preparing workflow p
 </div>
 
 > [!IMPORTANT]
-> **No public application download yet.** As of **November 23, 2026**, this public distribution repository contains documentation and branding, but **no released Windows installer**. Private development milestones are not product releases. GitHub's automatic source ZIP is **not** the application.
+> **Public Beta now available – NOT stable.** [v1.0.0-beta.3](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3) was published on **November 23, 2026**, with a Windows ZIP, manifest and signature file. Full independent Windows, browser and security acceptance is **not evidenced** here. Use synthetic workflows first and back up your library before upgrades. GitHub's **Code → Download ZIP** is documentation only.
 
 ## What is Showcase Studio?
 
@@ -43,7 +43,7 @@ See [feature maturity](FEATURE_STATUS.md), [privacy and exports](PRIVACY_AND_EXP
 
 ## How to start after an actual release
 
-Open [GitHub Releases](https://github.com/rootkid-code/showcase-studio-releases/releases), choose a concrete version with an attached installation artifact, read its requirements and checksums, and follow the included installation guide. Start with synthetic demo workflows; only later consider an n8n read-only connection.
+Open the [**v1.0.0-beta.3 release**](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.3) and download **ShowcaseStudio-1.0.0-beta.3.zip** under **Assets** (not the repository source ZIP). Per release notes, it targets **Windows 10/11 (64-bit)** with **Python 3.11+**. Verify the published SHA-256 **01460c3d52ac03e30be254e6ea588bc45421c9c65bb2e345006d25b882838afb**, extract completely and run **01-INSTALLIEREN.vbs**. Begin with synthetic JSON workflows; only later consider an n8n read-only connection. [Artifact and QA limits](releases/v1.0.0-beta.3.md).
 
 **There is no downloadable application in this repository yet.**
 
