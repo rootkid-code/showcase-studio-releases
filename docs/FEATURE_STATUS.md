@@ -1,35 +1,57 @@
-# Feature-Status & Produktgrenzen
+# Feature-Status · Showcase Studio
 
-**Stand: 23.11.2026.** Diese Übersicht trennt **Code beziehungsweise Konzeption in privaten Entwicklungszweigen** von einer **öffentlich installierbaren, überprüften Anwendung**. Sie ist kein Testprotokoll.
+**Stand: 23. November 2026 · Öffentliche Vorabversion: [`v1.0.0-beta.4`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4)**
 
-| Bereich | Aktueller Entwicklungsbezug | Öffentlich freigegeben? |
+> [!IMPORTANT]
+> **„In Beta 4 beschrieben“ bedeutet nicht „unabhängig geprüft“ oder „Stable“.** Die öffentlichen Release Notes sind die Funktionsbeschreibung der ausgelieferten Beta. Für diese Dokumentationsaktualisierung wurde das Windows-ZIP nicht installiert oder der darin enthaltene Code unabhängig auditiert. Reale Tests, Sicherheitsprüfung und Freigabe bleiben getrennte Nachweise.
+
+## Drei Ebenen unterscheiden
+
+| Kennzeichnung | Bedeutung |
+|:--|:--|
+| **Öffentliche Beta** | Ein konkretes, herunterladbares Pre-release mit Dateianhang und Release Notes ist vorhanden. |
+| **Im Beta-4-Release beschrieben** | Eine Funktion wird vom veröffentlichten Release dokumentiert, ohne dass daraus ein unabhängiger QA-Nachweis entsteht. |
+| **Geplant / HOLD** | Konzeption oder private Entwicklungsarbeit; **nicht** als öffentliche Funktion versprechen. |
+
+## Funktionsübersicht
+
+| Bereich | Beta-4-Release-Status | Was noch abzugrenzen ist |
 |:--|:--|:--|
-| Lesender n8n-Import / JSON | Implementierungen im privaten Projekt | Nein |
-| Workflow-Canvas / Node-Fokus / Sticky Notes | Privater Entwicklungsstand | Nein |
-| Goldene Markenidentität | Originalassets synchronisiert | **Nur Marketingassets** |
-| Workflow-Landkarte / Subflow-Navigation | Fortgeschrittener privater Zweig | Nein |
-| Versionshistorie / Vergleich / optionaler Sync | Fortgeschrittener privater Zweig | Nein |
-| HTML, SVG, PNG, Markdown, Mermaid, JSON | Exportmodule im privaten Code vorhanden | Keine öffentliche Paketabnahme |
-| PDF / Einbettung / Sammelausgabe | Implementierungen in fortgeschrittenen Zweigen | Keine öffentliche Paketabnahme |
-| Erweiterte Erklärungen / Privacy Review | Privater Entwicklungszweig | Keine öffentliche Paketabnahme |
-| Windows Installation / Start / Upgrade | Installer-Code vorhanden, native E2E-Gates ausstehend | Kein Public-Build |
-| macOS-Unterstützung | Experimentelle Entwicklungszweige | Kein Public-Release |
-| Verkauf, Preise, Pro-Edition | Ideen/experimentelle private Komponenten | **HOLD – keine Produktankündigung** |
+| n8n JSON / Verbindung | **Im öffentlichen Beta-4-Release beschrieben** | Read-only-Rechte und reale n8n-Varianten testen |
+| Canvas, Notes, Fokus, Layout | **Im öffentlichen Beta-4-Release beschrieben** | Großflächige Browser-/Windows-Layouttests |
+| **7 Styles: n8n, Make, Zapier, Blueprint, Aurora, Sketch, Metro** | **Im öffentlichen Beta-4-Release beschrieben** | Make/Zapier sind hier **Visual-Looks, keine Adapter** |
+| Workflow-Landkarte, Subflows | **Im öffentlichen Beta-4-Release beschrieben** | Korrekte Verknüpfungen und unbekannte Fälle |
+| Versionen, Vergleich, optionaler Sync | **Im öffentlichen Beta-4-Release beschrieben** | Reimport und Datenerhalt bei Fehlern |
+| HTML/SVG/PNG/PDF/Markdown/Mermaid/Collection | **Im öffentlichen Beta-4-Release beschrieben** | Exportparität, Offline-/Printqualität |
+| Privacy Scan, Korrekturen, Freigaben | **Im öffentlichen Beta-4-Release beschrieben** | Fehlalarme, PII/Secret-Regressionen und Endkontrolle |
+| Vorlagen, Guided Setup, Dark/Light | **Im öffentlichen Beta-4-Release beschrieben** | A11y, Fokus und Win-Scaling |
+| Beta-ZIP, Update-Manifest, Signaturdatei | **Öffentliche Artefakte vorhanden** | Signaturkette, Paketinhalt und nativer Upgrade-Test nicht unabhängig verifiziert |
+| **Make Blueprint JSON importieren** | **Geplant** | File-first Adapter, Fixture-/Security-Gates |
+| **Zapier Classic JSON importieren** | **Geplant** | Tarifabhängigkeit und echte Export-Fixtures |
+| Node-RED / Power Automate / Activepieces | **Discovery / HOLD** | Kein Versand-/API- oder Formatversprechen |
+| Pro, Checkout, Preisgestaltung | **HOLD** | Keine öffentliche Verkaufsfreigabe |
+| Stable Windows / macOS | **Nicht freigegeben** | Native Tests, Security Review, Freigaben |
 
-## Bedeutung der Zustände
+## Öffentlicher Download
 
-- **Implementiert:** Dateien/Funktionsmodule existieren in einem Quellstand; damit ist noch nicht bewiesen, dass sie in einer geprüften Installation zuverlässig funktionieren.
-- **Getestet:** Konkrete reproduzierbare Testnachweise sind dem tatsächlichen Build/Commit zugeordnet.
-- **Öffentlich veröffentlicht:** Paket, Release Notes, Versionsnummer und Freigabe liegen auf der [GitHub-Releases-Seite](https://github.com/rootkid-code/showcase-studio-releases/releases).
+[`v1.0.0-beta.4`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) wurde am **23.11.2026** als Pre-release veröffentlicht. Unter **Assets** existieren:
 
-**Derzeit ist nur die öffentliche Dokumentation verfügbar, keine installierbare Anwendung.**
+- `ShowcaseStudio-1.0.0-beta.4.zip` (Windows-Paket)
+- `release.json` (Release-Manifest)
+- `release.json.sig` (Signaturdatei des Manifests)
 
-## Prioritäten vor einer ersten Free-Beta
+Der dokumentierte SHA-256-Hash für die ZIP ist:
 
-- Echte native Windows-11-Installation, Start, Upgrade, Deinstallation, Daten-/Rollback-Test.
-- n8n-Berechtigungen und negative Backend-/Browser-Security-Szenarien prüfen.
-- Exporte gegen die freigegebenen, bereinigten Darstellungen abgleichen.
-- Reale Testdaten-Workflows, aussagekräftige Screenshots und transparent dokumentierte Einschränkungen.
-- Release-Artefakt gegen sensible Dateien/Publisher-Komponenten scannen, Prüfsummen veröffentlichen und unabhängige Freigabe protokollieren.
+`b67cf8906d95a0ee7da97a2363e620aee23620510513fe7294992ffc055e4bb2`
 
-[Produktprioritäten](PROJECT_DIRECTION.md) · [Release-Gates](RELEASE_POLICY.md) · [Anwenderhandbuch](USAGE_GUIDE.md)
+Die Existenz von Prüfsumme/Signaturdatei ist **nicht** gleichbedeutend mit einer hier durchgeführten Signaturprüfung oder einem Installer-PASS.
+
+## Was vor Stable nachgewiesen sein muss
+
+1. Reale Windows-10/11-Installation, Start, Upgrade, Rollback, Deinstallation und Bibliotheks-Datenerhalt.
+2. Negative Backend-/Session-/Host-/Origin- und n8n-Rechteprüfungen.
+3. Privacy- und Content-/HTML-/SVG-/PDF-Egress-Tests mit synthetischen Gegenbeispielen.
+4. A11y und 7-Look-Regressionen in Dark/Light, hohen Zoom-/DPI-Stufen, Exportvarianten.
+5. Binärpaket-, Publisher-/Private-Key-/Secret-Scan; reproduzierbare Build-Provenienz und eindeutige Freigabe.
+
+[Erste Schritte](GETTING_STARTED.md) · [Release-Policy](RELEASE_POLICY.md) · [Produktprioritäten](PROJECT_DIRECTION.md) · [README](../README.md)
