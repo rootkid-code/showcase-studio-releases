@@ -2,63 +2,102 @@
 
 [Deutsch](../README.md) · **English**
 
-<img src="../assets/brand/showcase-hero-dark.svg" width="100%" alt="Showcase Studio gold S brand and an abstract read, explain, review workflow diagram. Concept illustration, not a screenshot." />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../assets/brand/showcase-hero-dark.svg" />
+  <img src="../assets/brand/showcase-hero-light.svg" width="100%" alt="Showcase Studio: original golden S and an abstract workflow illustration, not an application screenshot." />
+</picture>
 
 # Showcase Studio
 
-**Make complex n8n workflows understandable.**
+### Complex workflows. Clearly explained.
 
-A local, read-only workspace for explaining, reviewing, and preparing workflow presentations.
+**A local-first, read-only presentation workspace for n8n automations — explore, present, review and share.**
 
-[Product](#what-is-showcase-studio) · [Capabilities](#development-capabilities) · [Getting started](GETTING_STARTED.md) · [Releases](https://github.com/rootkid-code/showcase-studio-releases/releases)
+**Windows 10/11 · Community Preview · Public version `v1.0.0-beta.4`**
+
+[**Download Beta 4**](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) · [**Getting started**](GETTING_STARTED.md) · [**Capabilities**](#beta-capabilities) · [**Documentation**](README.md)
 
 </div>
 
 > [!IMPORTANT]
-> **No public application download yet.** As of **November 23, 2026**, this public distribution repository contains documentation and branding, but **no released Windows installer**. Private development milestones are not product releases. GitHub's automatic source ZIP is **not** the application.
+> **The public beta is available, but this is not a stable release.** On November 23, 2026, [`v1.0.0-beta.4`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) was published as a **pre-release with a Windows ZIP**. This does not imply independent Windows end-to-end validation or security certification. Start with synthetic test workflows and keep backups. **Code → Download ZIP** only downloads this documentation repository, **not the app**.
 
-## What is Showcase Studio?
+## Why Showcase Studio?
 
-An automation can work perfectly in n8n and still be hard to explain. Showcase Studio explores a **presentation-first** approach: read the workflow structure, clarify the business process, and consciously approve what may be shared.
+A working automation is not necessarily an understandable explanation. Branches, technical steps, notes and cross-workflow references can obscure the business story.
 
-**The workflow stays in n8n.** Showcase Studio is designed for read-only inspection, not execution or editing.
+**Showcase Studio makes a workflow easier to explain without executing or editing the original automation.**
 
-| Explore | Explain | Review |
+| Explore | Present | Review |
 |:--|:--|:--|
-| Read graph connections, sections and node descriptions. | Build a more understandable presentation of technical processes. | Check notes, labels, URLs and information before external sharing. |
+| Trace nodes, branches, notes and related flows. | Choose the right look, focus on key steps and tell a coherent story. | Check sensitive information, explicitly approve content and inspect actual exported files. |
 
-It is intended for automation builders, consultants, agencies, educators and internal operations teams.
+```mermaid
+flowchart LR
+    A["n8n / JSON"] --> B["Read-only import"]
+    B --> C["Understand the graph"]
+    C --> D["Style & storytelling"]
+    D --> E{"Privacy review"}
+    E -->|"Revise"| D
+    E -->|"Approve"| F["Offline HTML · PDF · SVG · Gallery"]
+```
 
-## Development capabilities
+*Showcase Studio is not an automation execution service, workflow editor or compliance certification.*
 
-The following areas exist in private project branches or documented designs; **none are currently promised as a publicly supported build**.
+## Beta capabilities
 
-- n8n/JSON import, presentation canvas, notes and node focus
-- Workflow maps, linked sub-workflows and structural comparisons in advanced development branches
-- Export mechanisms including HTML, SVG, PNG, Markdown and Mermaid
-- Privacy reviews and explicit release approval concepts
-- Windows-first packaging that still requires real native end-to-end sign-off
+These features are described in the **published Beta 4 release notes**, not independently verified in this documentation update.
 
-See [feature maturity](FEATURE_STATUS.md), [privacy and exports](PRIVACY_AND_EXPORT.md) and [release quality standards](RELEASE_POLICY.md).
+| Area | What Beta 4 describes |
+|:--|:--|
+| **Import** | n8n JSON files, optional n8n connection and local library |
+| **Canvas** | Interactive diagrams, node focus, notes, sections and presentation editing |
+| **7 visual looks** | n8n, Make, Zapier, Blueprint, Neon Aurora, Sketchbook and Metro Map |
+| **Context** | Workflow map, sub-workflow navigation, version comparison and optional sync |
+| **Privacy** | Sensitive-content review, corrections and manual approval before sharing |
+| **Export** | Offline HTML, galleries, SVG/PNG, PDF, Markdown/Mermaid and more |
+| **Presets & UX** | Handout, portfolio, community, technical docs; guided setup and accessible controls |
 
-## How to start after an actual release
+**Make and Zapier currently refer to visual styles, not proven Make/Zapier import support.** File-first, provider-neutral Make/Zapier adapters are planned only. [Feature status](FEATURE_STATUS.md).
 
-Open [GitHub Releases](https://github.com/rootkid-code/showcase-studio-releases/releases), choose a concrete version with an attached installation artifact, read its requirements and checksums, and follow the included installation guide. Start with synthetic demo workflows; only later consider an n8n read-only connection.
+## Seven styles, one original workflow
 
-**There is no downloadable application in this repository yet.**
+**Provider-inspired:** n8n · Make · Zapier. **Technical:** Blueprint. **Creative:** Neon Aurora · Sketchbook · Metro Map.
 
-## Brand and screenshots
+These are independent visual interpretations, not official vendor UIs or partnerships. The original **workflow source** remains distinct from the selected presentation look.
 
-The gold S-workflow logo is the current original brand. The header is conceptual artwork, **not a captured application UI**. Older screenshots are available only in a labeled [historical gallery](VISUAL_ARCHIVE.md). Current screenshots will be shared only after capturing a verified build.
+## Download and try Beta 4
 
-[Brand guide](BRANDING.md) · [Documentation index](README.md) · [Support](../SUPPORT.md)
+1. Visit the [`v1.0.0-beta.4` release](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) and download **`ShowcaseStudio-1.0.0-beta.4.zip`** from **Assets**, not the generated source ZIP.
+2. Optionally verify the checksum in PowerShell:
 
-## Current focus
+   ```powershell
+   Get-FileHash .\ShowcaseStudio-1.0.0-beta.4.zip -Algorithm SHA256
+   ```
 
-**The immediate priority is a reliable Free/Community Beta**, real platform testing, privacy review, an understandable installer and useful documentation. **Paid offerings, pricing and Pro plans are explicitly on hold.** See [project direction](PROJECT_DIRECTION.md).
+   Expected SHA-256 per the release notes:  
+   `b67cf8906d95a0ee7da97a2363e620aee23620510513fe7294992ffc055e4bb2`
+3. Fully extract the ZIP, then run **`01-INSTALLIEREN.vbs`** following the included release instructions.
+4. Begin with a **synthetic n8n JSON test workflow**; file import does not require a live connection.
 
-This public repository is **not an open-source grant** for the private application. See [legal notices](../NOTICE.md).
+**Prerequisites in the release notes:** 64-bit Windows 10 or 11 and Python 3.11+. This documentation change did not run native Windows installation tests.
+
+[Getting started](GETTING_STARTED.md) · [Support](../SUPPORT.md) · [Releases](https://github.com/rootkid-code/showcase-studio-releases/releases)
+
+## Privacy, roadmap and support
+
+Internal URLs, notes, names and business process structure can be confidential even without credentials. **Review → sanitize → explicitly approve → inspect the actual export.** Don't post API keys, customer workflows or unsanitized logs in public issues.
+
+**Now:** public beta feedback, Windows installation/upgrade QA, privacy and clear UX. **Planned:** Make Blueprint, Zapier JSON and further providers as offline file adapters. **On hold:** Pro commercialization, pricing and checkout. Planned work is not a shipped feature.
+
+[Privacy & export](PRIVACY_AND_EXPORT.md) · [Release policy](RELEASE_POLICY.md) · [Product direction](PROJECT_DIRECTION.md) · [Legal](../NOTICE.md) · [Security](../SECURITY.md)
 
 ---
 
-<div align="center"><sub>© 2026 rootkid-code · Showcase Studio · Not affiliated with n8n</sub></div>
+<div align="center">
+<img src="../assets/brand/showcase-mark.svg" width="44" alt="Showcase Studio golden S logo"/>
+
+**Showcase Studio** · *Understand the workflow. Tell the story.*
+
+<sub>© 2026 Florian Windhager · Independent project · Not affiliated with n8n, Make or Zapier</sub>
+</div>
