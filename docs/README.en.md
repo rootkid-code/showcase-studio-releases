@@ -13,14 +13,14 @@
 
 **A local-first, read-only presentation workspace for n8n automations — explore, present, review and share.**
 
-**Windows 10/11 · Community Preview · Public version `v1.0.0-beta.4`**
+**Windows 10/11 · Community Preview · Public version `v1.0.0-beta.6`**
 
-[**Download Beta 4**](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) · [**Getting started**](GETTING_STARTED.md) · [**Capabilities**](#beta-capabilities) · [**Documentation**](README.md)
+[**Download Beta 6**](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.6) · [**Getting started**](GETTING_STARTED.md) · [**Capabilities**](#beta-capabilities) · [**Documentation**](README.md)
 
 </div>
 
 > [!IMPORTANT]
-> **The public beta is available, but this is not a stable release.** On November 23, 2026, [`v1.0.0-beta.4`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) was published as a **pre-release with a Windows ZIP**. This does not imply independent Windows end-to-end validation or security certification. Start with synthetic test workflows and keep backups. **Code → Download ZIP** only downloads this documentation repository, **not the app**.
+> **The public beta is available, but this is not a stable release.** On November 23, 2026, [`v1.0.0-beta.6`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.6) was published as a **pre-release with a Windows ZIP**. This does not imply independent Windows end-to-end validation or security certification. Start with synthetic test workflows and keep backups. **Code → Download ZIP** only downloads this documentation repository, **not the app**.
 
 ## Why Showcase Studio?
 
@@ -34,7 +34,7 @@ A working automation is not necessarily an understandable explanation. Branches,
 
 ```mermaid
 flowchart LR
-    A["n8n / JSON"] --> B["Read-only import"]
+    A["n8n · Make · Node-RED · Zapier export"] --> B["Read-only import"]
     B --> C["Understand the graph"]
     C --> D["Style & storytelling"]
     D --> E{"Privacy review"}
@@ -46,37 +46,39 @@ flowchart LR
 
 ## Beta capabilities
 
-These features are described in the **published Beta 4 release notes**, not independently verified in this documentation update.
+These features are described in the **published release notes for Beta 4 through Beta 6**, not independently verified in this documentation update.
 
-| Area | What Beta 4 describes |
+| Area | What the release notes describe |
 |:--|:--|
-| **Import** | n8n JSON files, optional n8n connection and local library |
+| **Import** | n8n JSON files, optional n8n connection and local library. Since Beta 5: file import of Make blueprints, Zapier exports and Node-RED flows. Since Beta 6: read-only live connection to Make and Node-RED; Zapier guided through its official data export |
 | **Canvas** | Interactive diagrams, node focus, notes, sections and presentation editing |
-| **7 visual looks** | n8n, Make, Zapier, Blueprint, Neon Aurora, Sketchbook and Metro Map |
-| **Context** | Workflow map, sub-workflow navigation, version comparison and optional sync |
+| **8 visual looks** | n8n, Make, Zapier, Node-RED (since Beta 6), Blueprint, Neon Aurora, Sketchbook and Metro Map |
+| **Context** | Workflow map, sub-workflow navigation, version comparison and optional sync; since Beta 6 a read-only change check before syncing |
 | **Privacy** | Sensitive-content review, corrections and manual approval before sharing |
 | **Export** | Offline HTML, galleries, SVG/PNG, PDF, Markdown/Mermaid and more |
 | **Presets & UX** | Handout, portfolio, community, technical docs; guided setup and accessible controls |
 
-**Make and Zapier currently refer to visual styles, not proven Make/Zapier import support.** File-first, provider-neutral Make/Zapier adapters are planned only. [Feature status](FEATURE_STATUS.md).
+**Make, Zapier and Node-RED imports are described in the Beta 5 and Beta 6 release notes but not independently verified.** Per the release notes, Zapier import goes through Zapier's official data export, since Zapier offers no read API for Zaps. [Feature status](FEATURE_STATUS.md) (still reflects Beta 4).
 
-## Seven styles, one original workflow
+## Eight styles, one original workflow
 
-**Provider-inspired:** n8n · Make · Zapier. **Technical:** Blueprint. **Creative:** Neon Aurora · Sketchbook · Metro Map.
+**Provider-inspired:** n8n · Make · Zapier · Node-RED. **Technical:** Blueprint. **Creative:** Neon Aurora · Sketchbook · Metro Map.
 
 These are independent visual interpretations, not official vendor UIs or partnerships. The original **workflow source** remains distinct from the selected presentation look.
 
-## Download and try Beta 4
+## Download and try Beta 6
 
-1. Visit the [`v1.0.0-beta.4` release](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) and download **`ShowcaseStudio-1.0.0-beta.4.zip`** from **Assets**, not the generated source ZIP.
+1. Visit the [`v1.0.0-beta.6` release](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.6) and download **`ShowcaseStudio-1.0.0-beta.6.zip`** from **Assets**, not the generated source ZIP.
 2. Optionally verify the checksum in PowerShell:
 
    ```powershell
-   Get-FileHash .\ShowcaseStudio-1.0.0-beta.4.zip -Algorithm SHA256
+   Get-FileHash .\ShowcaseStudio-1.0.0-beta.6.zip -Algorithm SHA256
    ```
 
    Expected SHA-256 per the release notes:  
-   `b67cf8906d95a0ee7da97a2363e620aee23620510513fe7294992ffc055e4bb2`
+   `c03b916f0786ea67a3dc016f58cbc0c7c50a24d98a3778c953b1f0d4fbe2d285`
+
+   The release also ships `release.json` (manifest with checksum) and `release.json.sig` (Ed25519 signature), which the studio uses to verify updates according to the release notes.
 3. Fully extract the ZIP, then run **`01-INSTALLIEREN.vbs`** following the included release instructions.
 4. Begin with a **synthetic n8n JSON test workflow**; file import does not require a live connection.
 
@@ -88,7 +90,7 @@ These are independent visual interpretations, not official vendor UIs or partner
 
 Internal URLs, notes, names and business process structure can be confidential even without credentials. **Review → sanitize → explicitly approve → inspect the actual export.** Don't post API keys, customer workflows or unsanitized logs in public issues.
 
-**Now:** public beta feedback, Windows installation/upgrade QA, privacy and clear UX. **Planned:** Make Blueprint, Zapier JSON and further providers as offline file adapters. **On hold:** Pro commercialization, pricing and checkout. Planned work is not a shipped feature.
+**Now:** public beta feedback, Windows installation/upgrade QA, privacy and clear UX. **Described in the Beta 5/6 release notes:** Make, Zapier and Node-RED imports, pending independent verification. **Planned:** further formats. **On hold:** Pro commercialization, pricing and checkout. Planned work is not a shipped feature.
 
 [Privacy & export](PRIVACY_AND_EXPORT.md) · [Release policy](RELEASE_POLICY.md) · [Product direction](PROJECT_DIRECTION.md) · [Legal](../NOTICE.md) · [Security](../SECURITY.md)
 
@@ -99,5 +101,5 @@ Internal URLs, notes, names and business process structure can be confidential e
 
 **Showcase Studio** · *Understand the workflow. Tell the story.*
 
-<sub>© 2026 Florian Windhager · Independent project · Not affiliated with n8n, Make or Zapier</sub>
+<sub>© 2026 Florian Windhager · Independent project · Not affiliated with n8n, Make, Zapier or Node-RED</sub>
 </div>
