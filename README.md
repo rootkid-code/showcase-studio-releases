@@ -13,14 +13,14 @@
 
 **Ein lokales Präsentationsstudio für n8n-Automationen: verstehen, gestalten, sicher prüfen und bewusst weitergeben.**
 
-**Windows 10/11 · Community Preview · Öffentliche Version `v1.0.0-beta.4`**
+**Windows 10/11 · Community Preview · Öffentliche Version `v1.0.0-beta.6`**
 
-[**Beta 4 herunterladen**](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) · [**Erste Schritte**](docs/GETTING_STARTED.md) · [**Funktionen**](#funktionen-der-beta) · [**Dokumentation**](docs/README.md)
+[**Beta 6 herunterladen**](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.6) · [**Erste Schritte**](docs/GETTING_STARTED.md) · [**Funktionen**](#funktionen-der-beta) · [**Dokumentation**](docs/README.md)
 
 </div>
 
 > [!IMPORTANT]
-> **Eine öffentliche Beta ist verfügbar – noch keine stabile Version.** Am 23. November 2026 wurde [`v1.0.0-beta.4`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) als **Pre-release mit Windows-ZIP** veröffentlicht. Das ist ein realer Download, aber **kein unabhängiger Nachweis** einer vollständig abgenommenen Windows-Installation, eines Security Audits oder einer produktionsreifen Stable-Version. Bitte zunächst nur mit synthetischen oder ausdrücklich freigegebenen Workflows testen und Daten sichern. **Code → Download ZIP** ist nur das Dokumentationsrepository, nicht die App.
+> **Eine öffentliche Beta ist verfügbar – noch keine stabile Version.** Am 23. November 2026 wurde [`v1.0.0-beta.6`](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.6) als **Pre-release mit Windows-ZIP** veröffentlicht. Das ist ein realer Download, aber **kein unabhängiger Nachweis** einer vollständig abgenommenen Windows-Installation, eines Security Audits oder einer produktionsreifen Stable-Version. Bitte zunächst nur mit synthetischen oder ausdrücklich freigegebenen Workflows testen und Daten sichern. **Code → Download ZIP** ist nur das Dokumentationsrepository, nicht die App.
 
 ## Die Idee
 
@@ -38,7 +38,7 @@ Ein technisch funktionierender Workflow ist nicht automatisch eine überzeugende
 
 ```mermaid
 flowchart LR
-    A["n8n / JSON"] --> B["Read-only Import"]
+    A["n8n · Make · Node-RED · Zapier-Export"] --> B["Read-only Import"]
     B --> C["Ablauf verstehen"]
     C --> D["Stil & Erklärung"]
     D --> E{"Privacy Review"}
@@ -50,42 +50,44 @@ flowchart LR
 
 ## Funktionen der Beta
 
-Die folgende Übersicht basiert auf den **öffentlichen Beta-4-Release-Notes**. Sie beschreibt enthaltene Funktionen, nicht von uns unabhängig durchgeführte Tests.
+Die folgende Übersicht basiert auf den **öffentlichen Release Notes von Beta 4 bis Beta 6**. Sie beschreibt enthaltene Funktionen, nicht von uns unabhängig durchgeführte Tests.
 
 | Bereich | Was die Release Notes beschreiben |
 |:--|:--|
-| **Import** | n8n-JSON-Dateien und optionale Verbindung mit n8n; lokale Workflow-Bibliothek |
+| **Import** | n8n-JSON-Dateien und optionale Verbindung mit n8n; lokale Workflow-Bibliothek. Seit Beta 5 Datei-Import von Make-Blueprints, Zapier-Exporten und Node-RED-Flows; seit Beta 6 lesende Live-Verbindung zu Make und Node-RED, Zapier geführt über den offiziellen Datenexport |
 | **Canvas & Präsentation** | Interaktive Graphen, Node-Fokus, Sticky Notes, Abschnitte und Layout-Anpassungen |
-| **7 Designstile** | n8n, Make, Zapier, Blueprint, Neon Aurora, Skizzenbuch und Linienplan |
-| **Zusammenhänge** | Workflow-Landkarte, Sub-Workflow-Navigation, Versionenvergleich und optionaler Sync |
+| **8 Designstile** | n8n, Make, Zapier, Node-RED (seit Beta 6), Blueprint, Neon Aurora, Skizzenbuch und Linienplan |
+| **Zusammenhänge** | Workflow-Landkarte, Sub-Workflow-Navigation, Versionenvergleich und optionaler Sync; seit Beta 6 lesende Änderungsprüfung vor dem Synchronisieren |
 | **Sicherheitsprüfung** | Privacy-Check für freizugebende Inhalte mit manuellen Korrektur- und Freigabeschritten |
 | **Ausgabe** | Offline-HTML, Galerie, SVG/PNG, PDF-Handout, Markdown/Mermaid und weitere dokumentierte Formate |
 | **Vorlagen & UX** | Handout, Portfolio, Community und technische Doku; geführte Einrichtung, Dark/Light, kompakte Menüs |
 
-**Wichtig:** Die Make- und Zapier-**Designs** sind vorhanden, **Make-/Zapier-Importe dagegen erst geplant**. Die Herkunft eines Workflows und sein gewählter Stil sind unterschiedliche Dinge. [Feature-Status](docs/FEATURE_STATUS.md).
+**Wichtig:** Make-, Zapier- und Node-RED-Importe sind **laut Release Notes von Beta 5 und 6** enthalten, aber **nicht unabhängig geprüft**. Für Zapier läuft der Import laut Release Notes über den offiziellen Datenexport, da Zapier keine Lese-Schnittstelle für Zaps anbietet. Die Herkunft eines Workflows und sein gewählter Stil bleiben unterschiedliche Dinge. [Feature-Status](docs/FEATURE_STATUS.md) (noch auf Stand Beta 4).
 
-## Sieben Looks. Ein Workflow.
+## Acht Looks. Ein Workflow.
 
 | Anbieterorientiert | Präsentation & kreativ |
 |:--|:--|
 | **n8n** – vertrauter Node-Flow | **Blueprint** – technische Zeichnung |
 | **Make** – runde, modulare Darstellung | **Neon Aurora** – atmosphärischer Tech-Look |
 | **Zapier** – klare Step-Ansicht | **Skizzenbuch** – handgezeichnete Erklärung |
-| | **Linienplan** – Prozesse wie Stationen |
+| **Node-RED** – farbige Knoten nach Node-Typ | **Linienplan** – Prozesse wie Stationen |
 
-Alle sieben sind **eigenständige visuelle Interpretationen** und keine offiziell bereitgestellten Anbieter-Oberflächen. Die drei kreativen Looks ergänzen den technischen Blueprint-Stil. [Brand Guide](docs/BRANDING.md).
+Alle acht sind **eigenständige visuelle Interpretationen** und keine offiziell bereitgestellten Anbieter-Oberflächen. Die drei kreativen Looks ergänzen den technischen Blueprint-Stil. [Brand Guide](docs/BRANDING.md).
 
-## Beta 4 ausprobieren
+## Beta 6 ausprobieren
 
-1. [**Release v1.0.0-beta.4**](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.4) öffnen und unter **Assets** die Datei **`ShowcaseStudio-1.0.0-beta.4.zip`** herunterladen. Nicht den automatischen Source-Code-Download.
+1. [**Release v1.0.0-beta.6**](https://github.com/rootkid-code/showcase-studio-releases/releases/tag/v1.0.0-beta.6) öffnen und unter **Assets** die Datei **`ShowcaseStudio-1.0.0-beta.6.zip`** herunterladen. Nicht den automatischen Source-Code-Download.
 2. Optional mit PowerShell prüfen:
 
    ```powershell
-   Get-FileHash .\ShowcaseStudio-1.0.0-beta.4.zip -Algorithm SHA256
+   Get-FileHash .\ShowcaseStudio-1.0.0-beta.6.zip -Algorithm SHA256
    ```
 
    Erwartete Prüfsumme laut Release Notes:  
-   `b67cf8906d95a0ee7da97a2363e620aee23620510513fe7294992ffc055e4bb2`
+   `c03b916f0786ea67a3dc016f58cbc0c7c50a24d98a3778c953b1f0d4fbe2d285`
+
+   Das Release enthält außerdem `release.json` (Manifest mit Prüfsumme) und `release.json.sig` (Ed25519-Signatur), mit denen das Studio laut Release Notes Updates prüft.
 
 3. ZIP **vollständig entpacken** und nach Release-Anleitung **`01-INSTALLIEREN.vbs`** starten.
 4. Zunächst einen **synthetischen Workflow als JSON-Datei** importieren. Dafür ist keine Live-Verbindung zu n8n erforderlich.
@@ -99,7 +101,8 @@ Alle sieben sind **eigenständige visuelle Interpretationen** und keine offiziel
 Workflow-Namen, interne Links, Notizen und sogar die bloße Prozessstruktur können vertrauliche Informationen verraten. Deshalb: **lokal importieren → prüfen → bereinigen → freigeben → die erzeugte Datei nochmals öffnen**. Automatische Kontrollen ersetzen nicht die Verantwortung für das Teilen.
 
 **Heute:** Community-Beta, Benutzerfeedback, reproduzierbare Windows-/Upgrade-Nachweise, Datenschutz und ruhige UX.  
-**Geplant:** Erweiterbare Provider-Adapter für **Make-Blueprints**, **Zapier-JSON** und später weitere Formate – zuerst offline per Dateiupload.  
+**Laut Release Notes enthalten (Beta 5/6):** Importe aus **Make**, **Zapier** und **Node-RED**; unabhängige Prüfung steht aus.  
+**Geplant:** Weitere Formate.  
 **Zurückgestellt:** Öffentliche Preisgestaltung, Checkout und Pro-Vermarktung.
 
 Die Darstellung einer Plattform ist **kein Beleg**, dass deren Dateiformat schon unterstützt wird. [Entwicklungsrichtung](docs/PROJECT_DIRECTION.md).
@@ -119,7 +122,7 @@ Die Darstellung einer Plattform ist **kein Beleg**, dass deren Dateiformat schon
 
 **Gibt es einen Download?** Ja, als **öffentliche Beta**; keine offiziell stabile Freigabe.
 
-**Kann ich Make-/Zapier-Workflows importieren?** Aktuell nicht als bestätigte Funktion. Make und Zapier sind zunächst **Canvas-Looks**; Importadapter sind in Planung.
+**Kann ich Make-, Zapier- oder Node-RED-Workflows importieren?** Laut Release Notes ja: seit Beta 5 per Datei, seit Beta 6 für Make und Node-RED auch per lesender Live-Verbindung; Zapier über den offiziellen Datenexport. Unabhängig geprüft ist das nicht.
 
 **Verändert Showcase Studio n8n-Workflows?** Nein – das Produkt ist als **lesendes Präsentationswerkzeug** konzipiert. Die effektiven Rechte werden in n8n begrenzt.
 
@@ -136,5 +139,5 @@ Die Darstellung einer Plattform ist **kein Beleg**, dass deren Dateiformat schon
 
 [Releases](https://github.com/rootkid-code/showcase-studio-releases/releases) · [English](docs/README.en.md) · [rootkid / code](https://github.com/rootkid-code)
 
-<sub>© 2026 Florian Windhager · Unabhängiges Projekt · Keine Partnerschaft mit n8n, Make oder Zapier</sub>
+<sub>© 2026 Florian Windhager · Unabhängiges Projekt · Keine Partnerschaft mit n8n, Make, Zapier oder Node-RED</sub>
 </div>
